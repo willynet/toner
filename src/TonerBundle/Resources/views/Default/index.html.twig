@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Toner</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Toner Economicos" />
+
+<!-- css -->
+<link href="{{ asset('public/css/bootstrap.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('public/plugins/flexslider/flexslider.cs') }}s" rel="stylesheet" media="screen" />	
+<link href="{{ asset('public/css/cubeportfolio.min.css') }}" rel="stylesheet" />
+<link href="{{ asset('public/css/style.css') }}" rel="stylesheet" />
+<link href="{{ asset('public/css/estilo.css') }}" rel="stylesheet" />
+
+<!-- Theme skin -->
+<link id="t-colors" href="{{ asset('public/skins/blue.css') }}" rel="stylesheet" />
+
+	<!-- boxed bg -->
+	<link id="bodybg" href="{{ asset('public/bodybg/bg1.css') }}" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<!-- Smartsupp Live Chat script -->
+
+</head>
+<body>
+
+
+
+    <div id="wrapper" style="overflow: hidden;">
+	<!-- start header -->
+	<header>
+			<div class="top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="topleft-info">
+								<li><i class="fa fa-phone"></i>	<a href="tel:+5567199776">+(55) 67199776</a> </li>
+                                                                <li><i class="fa fa-envelope"></i> ventas@toner-economico.com </li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+                                                    <div  class="" style="    float: right;">
+                                                        <form class="navbar-form navbar-left" role="search" action="{{ path('toner_buscar') }}" method="post">
+                                                                <div class="form-group">
+                                                                  <input type="text" name="busqueda" class="form-control" placeholder="¿Que estas buscando?">
+                                                                </div>
+                                                                <button type="submit" class="btn btn-default">Buscar</button>
+                                                      </form>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="{{ path('toner_homepage') }} "><img src="{{ asset('public/img/logo.png') }}" alt="" width="315"  /></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown active">
+							<a href="{{ path('toner_homepage')}}" >Inicio </a>
+                            				
+						
+						</li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Tienda Virtual <i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('toner_vermarca', { 'id': 8 , 'page': 1}) }}">HP</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 7 , 'page': 1}) }}">Samsung</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 6 , 'page': 1}) }}">Brother</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 5 , 'page': 1}) }}">Xerox</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 4 , 'page': 1}) }}">LexMark</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 3 , 'page': 1}) }}">Canon</a></li>
+                                <li><a href="{{ path('toner_vermarca', { 'id': 2 , 'page': 1}) }}">Dell</a></li>
+					
+                                
+                            </ul>
+                        </li>
+                        <li><a href="{{ path('toner_privacidad') }}">Privacidad</a></li>
+                        <li><a href="{{ path('toner_terminos') }}">Politicas de venta</a></li>
+                        <li><a href="{{ path('toner_nosotros') }}">Acerca de Nosotros</a></li>                        
+                        <li><a href="{{ path('toner_contacto') }}">Contacto</a></li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+                
+        {% block slider %}       
+	<!-- end header -->
+	<section id="featured" class="bg"n style="background-color: whitesmoke;  margin-top: -50px;">
+	<!-- start slider -->
+
+			
+	<!-- start slider -->
+        <div class="container-fluid" style=" background-color: whitesmoke; margin-top: 30px;">
+            
+            <div class="row" style="margin-bottom: -2px;">
+                    <div class="col-lg-12" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px;">
+	<!-- Slider -->
+        <div id="main-slider" class="main-slider flexslider" style="margin-top: 0px;     margin-bottom: 0px;">
+            <ul class="slides">
+              <li>
+                <img src="{{ asset('public/img/slides/flexslider/11.png') }}" alt="" />
+                
+              </li>
+              <li>
+                <img src="{{ asset('public/img/slides/flexslider/3.png') }}" alt="" />
+                
+              </li>
+              <li>
+                <img src="{{ asset('public/img/slides/flexslider/4.png') }}" alt="" />
+                
+              </li>
+            </ul>
+        </div>
+	<!-- end slider -->
+			</div>
+		</div>
+                
+	</div>
+                <div class="container-fluid"  style="margin-top: 0px; background-color: whitesmoke;">
+                    <div class="row">
+                <div class="col-lg-12" style="padding: 0px; background-color: whitesmoke;  text-align: center;">
+                    <img src="{{ asset('public/img/footer.jpg') }}" alt="" style="width: 100%"/>
+                     <br>
+                </div>
+                
+            </div>
+                
+                </div>  
+	</section>
+        {% endblock %}         
+                
+         
+        {% block marcas %}
+        <section style="background-color: whitesmoke;  margin-top: -50px;">
+            <!-- clients -->
+            <div class="container-fluid">
+                <div class="container" style="    padding-top: 30px;" >
+                <div class="row" style="    margin-bottom: 0px; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px; text-align: center;">
+                    <div class="col-xs-12aligncenter client" style="    margin-top: 10px;">
+                               
+                                <a href="{{ path('toner_vermarca', { 'id': 8 , 'page': 1}) }}"> <img style="margin: -40px;" class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo7.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 7 , 'page': 1}) }}"> <img class="img-marca img-responsive "  alt="logo" src="{{ asset('public/img/clients/logo6.png') }}" /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 6 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo5.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 5 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo4.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 4 , 'page': 1}) }}"><img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo3.png') }}" /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 3 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo2.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 2 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo1.png') }}"  /></a>
+                        </div>
+                    </div>
+		</div>
+                        <hr class="">
+                </div>
+        </section>
+        
+        <section style="background-color: whitesmoke;  margin-top: 50px;">
+            <div class="container">
+                <hr class="colorgraph">
+                <div class="row">
+                    <h2>Productos destacados:</h2>
+                    <div class="col-lg-12 ">
+                   
+                       <div class=" col-xs-12 col-sm-6 col-md-3 ">
+                        <div class="thumbnail" style="height: 420px;">
+                            <img src="http://i.imgur.com/f2RM3zN.jpg" alt="" style="height: 210px; ">
+                          <div class="caption" style="margin-top: -15px;">
+                            <h4>Xerox Phaser 3610 Cartucho compatible de toner</h4>                                                                                  
+                            <div class="row" style="margin-bottom: 0px;">
+                                <div class="col-xs-12" style=" margin-bottom: 5px; text-align: center">
+                                    <img class="img-descuento" src="{{ asset('public/img/meses.JPG') }}" style="width: 100%; margin-bottom: 15px;" />
+                                    
+                                </div>
+                               
+                                <div class="col-xs-12 col-sm-7">
+                                    <p> <strong>Marca: xerox </strong><p>
+                                    <h4>$ 1.577 MX</h4>
+                                </div>
+                                
+                                 <div class="col-xs-12 col-sm-5">
+                                    <a href="{{ path('producto_verdetalle', { 'id' : 5 })}}" class="btn btn-info btn-block" role="button">Ver</a> 
+                                </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                   
+                      <div class=" col-xs-12 col-sm-6 col-md-3 ">
+                        <div class="thumbnail" style="height: 420px;">
+                            <img src="http://i.imgur.com/gS67fJv.jpg" alt="" style="height: 210px; ">
+                          <div class="caption" style="margin-top: -15px;">
+                            <h4>Xerox Phaser 3315 Cartucho compatible de toner</h4>                                                                                  
+                            <div class="row" style="margin-bottom: 0px;">
+                                <div class="col-xs-12" style=" margin-bottom: 5px; text-align: center">
+                                    <img class="img-descuento" src="{{ asset('public/img/meses.JPG') }}" style="width: 100%; margin-bottom: 15px;" />
+                                    
+                                </div>
+                               
+                                <div class="col-xs-12 col-sm-7">
+                                    <p> <strong>Marca: xerox </strong><p>
+                                    <h4>$ 799 MX</h4>
+                                </div>
+                                
+                                 <div class="col-xs-12 col-sm-5">
+                                    <a href="{{ path('producto_verdetalle', { 'id' : 6 })}}" class="btn btn-info btn-block" role="button">Ver</a> 
+                                </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                      
+                       <div class=" col-xs-12 col-sm-6 col-md-3 ">
+                        <div class="thumbnail" style="height: 420px;">
+                            <img src="http://i.imgur.com/tlBKj3r.jpg" alt="" style="height: 210px; ">
+                          <div class="caption" style="margin-top: -15px;">
+                            <h4>HP 26X Black LaserJet Cartucho compatible de toner</h4>                                                                                  
+                            <div class="row" style="margin-bottom: 0px;">
+                                <div class="col-xs-12" style=" margin-bottom: 5px; text-align: center">
+                                    <img class="img-descuento" src="{{ asset('public/img/meses.JPG') }}" style="width: 100%; margin-bottom: 15px;" />
+                                    
+                                </div>
+                               
+                                <div class="col-xs-12 col-sm-7">
+                                    <p> <strong>Marca: HP </strong><p>
+                                    <h4>$ 1.464 MX</h4>
+                                </div>
+                                
+                                 <div class="col-xs-12 col-sm-5">
+                                    <a href="{{ path('producto_verdetalle', { 'id' : 7 })}}" class="btn btn-info btn-block" role="button">Ver</a> 
+                                </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>   
+                        
+                                
+                      <div class=" col-xs-12 col-sm-6 col-md-3 ">
+                        <div class="thumbnail" style="height: 420px;">
+                            <img src="http://i.imgur.com/FuIjVVu.jpg" alt="" style="height: 210px; ">
+                          <div class="caption" style="margin-top: -15px;">
+                            <h4>Brother TN 336 black Cartucho Compatible de Toner</h4>                                                                                  
+                            <div class="row" style="margin-bottom: 0px;">
+                                <div class="col-xs-12" style=" margin-bottom: 5px; text-align: center">
+                                    <img class="img-descuento" src="{{ asset('public/img/meses.JPG') }}" style="width: 100%; margin-bottom: 15px;" />
+                                    
+                                </div>
+                               
+                                <div class="col-xs-12 col-sm-7">
+                                    <p> <strong>Marca: brother </strong><p>
+                                    <h4>$ 679 MX</h4>
+                                </div>
+                                
+                                 <div class="col-xs-12 col-sm-5">
+                                    <a href="{{ path('producto_verdetalle', { 'id' : 8 })}}" class="btn btn-info btn-block" role="button">Ver</a> 
+                                </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>          
+                </div>
+                   </div>
+              <hr class="colorgraph">            
+            </div>            
+        </section>               
+                        
+        {% endblock %}
+        
+        
+                        
+        {% block body %}
+        
+        
+	<section  style="background-color: whitesmoke;">
+            <div class="container">
+                <h2>Catálogo por marca:</h2>
+                <ul class="nav nav-pills">
+                  <li class="active"><a data-toggle="pill" href="#home">HP</a></li>          
+                  <li><a data-toggle="pill" href="#samsung">Samsung</a></li>
+                  <li><a data-toggle="pill" href="#brother">brother</a></li>
+                  <li><a data-toggle="pill" href="#xeror">xeror</a></li>
+                  <li><a data-toggle="pill" href="#lexmark">LexMark</a></li>
+                  <li><a data-toggle="pill" href="#canon">Canon</a></li>
+                  <li><a data-toggle="pill" href="#dell">Dell</a></li>
+                      
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active" style="overflow: auto;">
+                   
+                    <pre style="font-family: 'Roboto', sans-serif; height: 500px">
+<strong>HP MONOCROMÁTICO</strong>
+
+Cartucho Toner. HP. Negro Núm 95A (4,000 pág).<strong> 92295A</strong>. Para:. HP LaserJet II, HP LaserJet IId, HP LaserJet III, HP LaserJet IIId.
+Cartucho tóner. HP. Negro Num 98A (6800 pags). <strong>92298A.</strong> Para:. HP LaserJet Printers 4, 4m, 4 Plus, 4m Plus, 5, 5m, 5n, 5se.
+Cartucho tóner. HP. Negro Num 92A (2500 pags). <strong>C4092A.</strong> Para:. HP LaserJet Printers 1100, 1100a, 1100xi, 1100a xi, 3200, 3200m, 3200se.
+Cartucho tóner. HP. Negro Num 15 (2500 pags).<strong> C7115A.</strong> Para:. HP LaserJet Printers 1000, 1200, 1200n, 1200se, 1220, 1220se, 3300mfp, 3310, 3320mfp, 3320n mfp, 3330mfp, 3380.
+Cartucho de tinta. HP. Negro Num 15X (3500 pags). <strong>C7115X</strong>. Para:. HP LaserJet Printers 1200, 1200n, 1200se, 1220, 1220se, 3300mfp, 3310, 3320mfp, 3320n mfp, 3330mfp, 3380.
+Cartucho tóner. HP. Negro Num 13A (2500 pags). <strong>Q2613A</strong>. Para:.HP LaserJet Printers 1300, 1300n, 1300xi.
+Cartucho tóner. HP. Negro Num 96 (5000 pags). <strong>C4096A.</strong> Para:.HP LaserJet Printers 2100, 2100m, 2100se, 2100tn, 2100xi, 2200, 2200d, 2200dt, 2200dn, 2200dtn, 2200dse.
+Cartucho tóner. HP. Negro Num 06A (2500 pags). <strong>C3906A.</strong> Para:. HP LaserJet Printers 5L, 5L Xtra, 5L-FS, 6L, 6L se, 6Lxi, 3100, 3100se, 3100xi, 3150, 3150se, 3150xi.
+Cartucho tóner. HP. Negro Num 61X (10000 pags). <strong>C8061X.</strong> Para:. HP LaserJet Printers 4100, 4100n, 4100tn, 4100dtn, 4100mfp, 4101mfp.
+Cartucho tóner. HP. Negro Num 12A (2000 pags). <strong>Q2612A.</strong> Para:.HP LaserJet Printers 1012, 1018, 1020, 1022, 1022n, 1022nw, M1319f MFP, 3015, 3020, 3030, 3050, 3052, 3055.
+Cartucho tóner. HP. Negro Num 24 (2000 pags). <strong>Q2624A.</strong> Para:.HP LaserJet Printers 1150.
+Cartucho tóner. HP. Negro Num 03A (2500 pags). <strong>C3903A.</strong> Para:.HP LaserJet Printers 1150.
+Cartucho tóner. HP. Negro Num 27x (10000 pags). <strong>C4127X.</strong> Para:. HP LaserJet Printers 4000, 4000n, 4000se, 4000t, 4000tn, 4050, 4050 USB-Mac, 4050n, 4050se, 4050t, 4050tn.
+Cartucho tóner. HP. Negro Num 10 (6000 pags). <strong>Q2610A.</strong> Para:. HP LaserJet Printers 2300, 2300d, 2300dn, 2300dtn, 2300L, 2300n.
+Cartucho tóner. HP. Negro Num 74A (3350 pags).<strong> 92274A</strong>. Para:. HP LaserJet Printers 4L, 4mL, 4p, 4mp.
+Cartucho tóner. HP. Negro Num 09A (15000 pags). <strong>C3909A.</strong> Para:. HP LaserJet Printers 5si, 5si Mopier, 5si mx, 5si nx, 8000, 8000n, 8000dn, 8000 MFP.
+Cartucho tóner. HP. Negro Num 27A (6000 pags). <strong>C4127A.</strong> Para:. HP LaserJet Printers 4000, 4000n, 4000se, 4000t, 4000tn, 4050, 4050 USB-Mac, 4050n, 4050se, 4050t, 4050tn.
+Cartucho tóner. HP. Negro Num 29 (10000 pags). <strong>C4129X.</strong> Para:. HP LaserJet Printers 5000, 5000dn, 5000gn, 5000n, 5100, 5100dtn, 5100tn.
+Cartucho tóner. HP. Negro (20000 pags). <strong>C4182X.</strong> Para:. HP LaserJet Printers 8100, 8100n, 8100dn, 8100mfp, 8150, 8150n, 8150dn, 8150hn, 8150mfp.
+Cartucho tóner. HP. Negro 61A (6000 pags). <strong>C8061A.</strong> Para:. HP LaserJet Printers 4100, 4100n, 4100tn, 4100dtn, 4100mfp, 4101mfp.
+Cartucho tóner. HP. Negro 38A (12000 pags). <strong>Q1338A</strong>. Para:. HP LaserJet Printers 4200, 4200n, 4200tn, 4200dtn, 4200dtns, 4200dtnsl.
+Cartucho tóner. HP. Negro 39A (18000 pags). <strong>Q1339A.</strong> Para:. HP LaserJet Printers 4300, 4300n, 4300tn, 4300dtn, 4300dtns, 4300dtnsl.
+Cartucho tóner. HP. Negro 49A (2500 pags). <strong>Q5949A.</strong> Para:. HP LaserJet Printers 1160, 1160Le, 1320, 1320t, 1320n, 1320nw, 1320tn, 3390.
+Cartucho tóner. HP. Negro 49X (6000 pags). <strong>Q5949X.</strong> Para:. HP LaserJet Printers 1320, 1320t, 1320n, 1320nw, 1320tn, 3390.
+Cartucho tóner. HP. Negro 11A (6000 pags). <strong>Q6511A.</strong> Para:. HP LaserJet Printers 2420, 2420d, 2420dn, 2430, 2430n, 2430tn, 2430dtn.
+Cartucho tóner. HP. Negro 13X (4000 pags). <strong>Q2613X.</strong> Para:.HP LaserJet Printers 1300, 1300n, 1300xi.
+Cartucho tóner. HP. Negro 42A (10000 pags). <strong>Q5942A.</strong> Para:. HP LaserJet Printers 4240n, 4250n, 4250tn, 4250dtn, 4250dtnsl, 4350, 4350n, 4350tn, 4350dtn, 4350dtnsl.
+Cartucho tóner. HP. Negro 42X (20000 pags). <strong>Q5942X.</strong> Para:. HP LaserJet Printers 4250n, 4250tn, 4250dtn, 4250dtnsl, 4350, 4350n, 4350tn, 4350dtn, 4350dtnsl.
+Cartucho tóner. HP. Negro 45A (18,000pags). <strong>Q5945A.</strong> Para:. HP LaserJet Printers 4345mfp , 4345x mfp , 4345xm mfp, 4345xs mfp, M4345 MFP, M4345x MFP, M4345xm MFP, M4345xs MFP.
+Kit de tambor. HP. Negro/color (20,000 – 5,000pags). <strong>C9704A.</strong> Para:. HP Color LaserJet Printers 1500, 1500L, 1500LXI, 2500, 2500L, 2500n, 2500tn, 2500 LSE.
+Cartucho tóner. HP. Negro Num 11X (12,000pags). <strong>Q6511X.</strong> Para:. HP LaserJet Printers 2420, 2420d, 2420dn, 2430, 2430n, 2430tn, 2430dtn.
+Cartucho tóner. HP. Negro Num 51AX (6,500pags). <strong>Q7551A.</strong> Para:. HP LaserJet Printers P3005, P3005d, P3005dn, P3005n, P3005x, M3027 MFP, M3027x MFP, M3035 MFP, M3035xs MFP.
+Cartucho tóner. HP. Negro (12000pags). <strong>Q7516A.</strong> Para:. HP LaserJet Printers 5200, 5200dtn, 5200tn.
+Cartucho tóner. HP. Negro Num 53X (7000pags). <strong>Q7553X.</strong> Para:. HP LaserJet Printers P2015, P2015d, P2015dn, P2015x, M2727nf MFP.
+Cartucho tóner. HP. Negro (1500pags). <strong>CB435A.</strong> Para:. HP LaserJet Printers P1005, P1006.
+Cartucho tóner. HP. Negro (2000pags). <strong>CB436A.</strong> Para:. HP LaserJet Printers P1505, P1505n, M1522n MFP, M1522nf MFP.
+Cartucho tóner. HP. Negro Num 51X(13000pags).<strong> Q7551X.</strong> Para:. HP LaserJet Printers P3005, P3005d, P3005dn, P3005n, P3005x, M3027 MFP, M3027x MFP, M3035 MFP, M3035xs MFP.
+Cartucho tóner. HP. Negro Num 70A (15000pags). <strong>Q7570A</strong>. Para:. HP LaserJet Printers M5025 MFP, M5035 MFP, M5035x MFP, M5035xs MFP.
+Cartucho tóner. HP. Negro Num 64A (10000pags). <strong>CC364A</strong>. Para:. HP LaserJet Printers P4014n, P4014dn, P4015n, P4015dn, P4015tn, P4015x, P4515n, P4515tn, P4515x.
+Cartucho tóner. HP. Negro (6500pags). <strong>CE505X.</strong> Para:. HP LaserJet Printers P2055d, P2055dn, P2055x.
+Cartucho tóner. HP. Negro Num 64X (24000pags). <strong>CC364X</strong>. Para:. HP LaserJet Printers P4015n, P4015dn, P4015tn, P4015x, P4515n, P4515tn, P4515x.
+Cartucho tóner. HP. Negro Num 90A (10,000pags).<strong> CE390A.</strong> Para:. HP LaserJet Printers M4555. Rendimiento Normal
+Cartucho tóner. HP. Negro Num 90X (24,000pags). <strong>CE390X.</strong> Para:. HP LaserJet Printers M4555. Alto Rendimiento
+Cartucho tóner. HP. Negro Num 55A (6000pags). <strong>CE255A.</strong> Para:. HP LaserJet Printers P3015d, P3015n, P3015dn, P3015x.
+Cartucho tóner. HP. Negro Num 55X (12500pags). <strong>CE255X.</strong> Para:.HP LaserJet Printers P3015d, P3015n, P3015dn, P3015x.
+Cartucho tóner. HP. Negro (2300pags). <strong>CE505A.</strong> Para:. HP LaserJet Printers P2035, P2035n, P2055d, P2055dn, P2055x.
+Cartucho tóner. HP. Negro (2100pags). <strong>CE278A.</strong> Para:. HP LaserJet Printers P1606dn. 255x
+Cartucho tóner. HP. Negro (6900pags). <strong>CF280X.</strong> Para:. HP LaserJet Printers HP LaserJet Pro 400 MFP M425 M401
+Cartucho tóner. HP. Negro (1600pags). <strong>CE285A</strong>. Para:. HP LaserJet Printers P1102w.
+Cartucho tóner. HP. Negro (1600pags). <strong>CE283A</strong>. Para:. HP LaserJet Printers
+Cartucho tóner. HP Negro (3100pags.) . <strong>CF226A</strong>. P LaserJet Printers M402n, M402dn, M402dw HP Multifunction and All-in-One Products M426fdn MFP, M426fdw MFP
+Cartucho toner. HP Negro (25.000) <strong>CF281A</strong> HP LaserJet Pro 200 color MFP M276nw
+
+
+<strong>CARTUCHOS HP COLOR</strong>
+
+Cartucho de tinta. HP. Negro (5000pags). <strong>Q3960A.</strong> Para:. HP Color LaserJet Printers 2550L, 2550Ln, 2550n, 2820, 2830, 2840.
+Cartucho toner. HP. Cian (2000pags). <strong>Q3971A.</strong> Para:. HP Color LaserJet Printers 2550L, 2550Ln, 2550n, 2820, 2830, 2840.
+Cartucho toner. HP. Magenta (2000pags). <strong>Q3973A</strong>. Para:. HP Color LaserJet Printers 2550L, 2550Ln, 2550n, 2820, 2830, 2840.
+Cartucho toner. HP. Amarillo (2000pags).<strong> Q3972A.</strong> Para:. HP Color LaserJet Printers 2550L, 2550Ln, 2550n, 2820, 2830, 2840.
+Cartucho toner. HP. Negro (2500pags). <strong>Q6000A.</strong> Para:. HP Color LaserJet Printers CM1015 MFP, CM1017 MFP, 1600, 2600n, 2605dn, 2605dtn.
+Cartucho toner. HP. Cyan (2500pags). <strong>Q6001A.</strong> Para:. HP Color LaserJet Printers CM1015 MFP, CM1017 MFP, 1600, 2600n, 2605dn, 2605dtn.
+Cartucho toner. HP. Amarillo (2500pags). <strong>Q6002A.</strong> Para:. HP Color LaserJet Printers CM1015 MFP, CM1017 MFP, 1600, 2600n, 2605dn, 2605dtn.
+Cartucho toner. HP. Magenta (2000pags). <strong>Q6003A.</strong> Para:. HP Color LaserJet Printers CM1015 MFP, CM1017 MFP, 1600, 2600n, 2605dn, 2605dtn.
+Cartucho toner. HP. Negro (6000pags). <strong>Q2670A.</strong> Para:. HP Color LaserJet Printers 3500, 3500n, 3550, 3550n.
+Cartucho toner. HP. Cyan (4000pags). <strong>Q2671A.</strong> Para:. HP Color LaserJet Printers 3500, 3500n, 3550, 3550n.
+Cartucho toner. HP. Amarillo (4000pags). <strong>Q2672A.</strong> Para:. HP Color LaserJet Printers 3500, 3500n, 3550, 3550n.
+Cartucho toner. HP. Magenta (4000pags). <strong>Q2673A.</strong> Para:. HP Color LaserJet Printers 3500, 3500n, 3550, 3550n.
+Cartucho toner. HP. Negro (6000pags). <strong>Q2680A.</strong> Para:. HP Color LaserJet Printers 3700, 3700n, 3700dn, 3700dtn.
+Cartucho toner. HP. Cyan (6000pags).<strong> Q2681A.</strong> Para:. HP Color LaserJet Printers 3700, 3700n, 3700dn, 3700dtn.
+Cartucho toner. HP. Amarillo (6000pags). <strong>Q2682A.</strong> Para:. HP Color LaserJet Printers 3700, 3700n, 3700dn, 3700dtn.
+Cartucho toner. HP. Magenta (6000pags). <strong>Q2683A</strong>. Para:. HP Color LaserJet Printers 3700, 3700n, 3700dn, 3700dtn.
+Cartucho toner. HP. Negro (9000pags). <strong>C9720A.</strong> Para:. HP Color LaserJet Printers 4600, 4600n, 4600dn, 4600dtn, 4600hdn, 4650, 4650n, 4650dn, 4650dtn, 4650hdn.
+Cartucho toner. HP. Cian (8000pags). <strong>C9721A.</strong> Para:. HP Color LaserJet Printers 4600, 4600n, 4600dn, 4600dtn, 4600hdn, 4650, 4650n, 4650dn, 4650dtn, 4650hdn.
+Cartucho toner. HP. Amarillo (8000pags). <strong>C9722A.</strong> Para:. HP Color LaserJet Printers 4600, 4600n, 4600dn, 4600dtn, 4600hdn, 4650, 4650n, 4650dn, 4650dtn, 4650hdn.
+Cartucho toner. HP. Magenta (8000pags). <strong>C9723A.</strong> Para:. HP Color LaserJet Printers 4600, 4600n, 4600dn, 4600dtn, 4600hdn, 4650, 4650n, 4650dn, 4650dtn, 4650hdn.
+Kit de tambor. HP. Negro/color (20,000 pags). <strong>Q3964A.</strong> Para:. HP Color LaserJet Printers 2550L, 2550Ln, 2550n, 2820, 2830, 2840.
+Cartucho tóner. HP. Amarillo (12,000pags). <strong>C9732A.</strong> Para:. HP Color LaserJet Printers 5500, 5500n, 5500dn, 5500dtn, 5500hdn, 5550, 5550n, 5550dn, 5550dtn, 5550hdn.
+Cartucho tóner. HP. Cian (12,000pags).<strong> C9731A</strong>. Para:. HP Color LaserJet Printers 5500, 5500n, 5500dn, 5500dtn, 5500hdn, 5550, 5550n, 5550dn, 5550dtn, 5550hdn.
+Cartucho tóner. HP. Magenta (12,000pags). <strong>C9733A.</strong> Para:. HP Color LaserJet Printers 5500, 5500n, 5500dn, 5500dtn, 5500hdn, 5550, 5550n, 5550dn, 5550dtn, 5550hdn.
+Cartucho tóner. HP. Negro (13,000pags). <strong>C9730A</strong>. Para:. HP Color LaserJet Printers 5500, 5500n, 5500dn, 5500dtn, 5500hdn, 5550, 5550n, 5550dn, 5550dtn, 5550hdn.
+Cartucho tóner. HP. Negro (9,000pags). <strong>C4191A</strong>. Para:. HP Color LaserJet Printers 4500, 4500n, 4500dn, 4550, 4550n, 4550dn, 4550hdn.
+Cartucho tóner. HP. Cian (6,000pags). <strong>C4192A.</strong> Para:. HP Color LaserJet Printers 4500, 4500n, 4500dn, 4550, 4550n, 4550dn, 4550hdn.
+Cartucho tóner. HP. Magenta (6,000pags).<strong> C4193A.</strong> Para:. HP Color LaserJet Printers 4500, 4500n, 4500dn, 4550, 4550n, 4550dn, 4550hdn.
+Cartucho tóner. HP. Amarillo (6,000pags).<strong> C4194A.</strong> Para:. HP Color LaserJet Printers 4500, 4500n, 4500dn, 4550, 4550n, 4550dn, 4550hdn.
+Cartucho tóner. HP. Negro (5000págs). <strong>C9700A.</strong> Para:. HP Color LaserJet Printers 1500, 1500L, 1500LXI, 2500, 2500L, 2500n, 2500tn, 2500 LSE.
+Cartucho tóner. HP. Cian (4000págs). <strong>C9701A.</strong> Para:. HP Color LaserJet Printers 1500, 1500L, 1500LXI, 2500, 2500L, 2500n, 2500tn, 2500 LSE.
+Cartucho tóner. HP. Amarillo (4000págs). <strong>C9702A.</strong> Para:. HP Color LaserJet Printers 1500, 1500L, 1500LXI, 2500, 2500L, 2500n, 2500tn, 2500 LSE.
+Cartucho tóner. HP. Magenta (4000págs).<strong> C9703A.</strong> Para:. HP Color LaserJet Printers 1500, 1500L, 1500LXI, 2500, 2500L, 2500n, 2500tn, 2500 LSE.
+Cartucho tóner. HP. Negro con ColorSphere (6,000págs). <strong>Q6470A</strong>. Para:. HP Color LaserJet Printers CP3505dn, CP3505n, CP3505x, 3600, 3600n, 3600dn, 3800, 3800n, 3800dn, 3800dtn.
+Cartucho tóner. HP. Amarillo (6,000págs). <strong>Q7582A.</strong> Para:. HP Color LaserJet Printers CP3505dn, CP3505n, CP3505x, 3800, 3800n, 3800dn, 3800dtn.
+Cartucho tóner. HP. Cyan (6,000págs). <strong>Q7581A.</strong> Para:. HP Color LaserJet Printers CP3505dn, CP3505n, CP3505x, 3800, 3800n, 3800dn, 3800dtn.
+Cartucho tóner. HP. Magenta (6,000págs). <strong>Q7583A</strong>. Para:. HP Color LaserJet Printers CP3505dn, CP3505n, CP3505x, 3800, 3800n, 3800dn, 3800dtn.
+Cartucho tóner. HP. Negro (3,500págs). <strong>Q7560A</strong>. Para:. HP Color LaserJet Printers 3000, 3000n, 3000tn, 3000dn.
+Cartucho tóner. HP. Cian (3,500págs). <strong>Q7561A.</strong> Para:. HP Color LaserJet Printers 3000, 3000n, 3000tn, 3000dn.
+Cartucho tóner. HP. Amarillo (3,500págs). <strong>Q7562A.</strong> Para:. HP Color LaserJet Printers 3000, 3000n, 3000tn, 3000dn.
+Cartucho tóner. HP. Magenta con tóner ColorSphere (3,500págs). <strong>Q7563A.</strong> Para:. HP Color LaserJet Printers 3000, 3000n, 3000tn, 3000dn.
+Cartucho tóner. HP. NEGRO (8,500págs). <strong>C4149A.</strong> Para:. HP Color LaserJet Printers 8500, 8500n, 8500dn, 8550, 8550n, 8550dn, 8550gn, 8550mfp.
+Cartucho tóner. HP. CYAN (8,500págs). <strong>C4150A.</strong> Para:. HP Color LaserJet Printers 8500, 8500n, 8500dn, 8550, 8550n, 8550dn, 8550gn, 8550mfp.
+Cartucho tóner. HP. Magenta (8,500págs). <strong>C4151A.</strong> Para:. HP Color LaserJet Printers 8500, 8500n, 8500dn, 8550, 8550n, 8550dn, 8550gn, 8550mfp.
+Cartucho tóner. HP. Amarillo (8,500págs). <strong>C4152A.</strong> Para:. HP Color LaserJet Printers 8500, 8500n, 8500dn, 8550, 8550n, 8550dn, 8550gn, 8550mfp.
+Cartucho tóner. HP. Negro (11,000págs). <strong>Q5950A.</strong> Para:. HP Color LaserJet Printers 4700, 4700n, 4700dn, 4700dtn, 4700ph+.
+Cartucho tóner. HP. Cian (10,000págs). <strong>Q5951A.</strong> Para:. HP Color LaserJet Printers 4700, 4700n, 4700dn, 4700dtn, 4700ph+.
+Cartucho tóner. HP. Amarillo (10,000págs). <strong>Q5952A.</strong> Para:. HP Color LaserJet Printers 4700, 4700n, 4700dn, 4700dtn, 4700ph+.
+Cartucho tóner. HP. Magenta (10,000págs). <strong>Q5953A.</strong> Para:. HP Color LaserJet Printers 4700, 4700n, 4700dn, 4700dtn, 4700ph+.
+Cartucho tóner. HP. Cyan (4,000págs). <strong>Q6471A.</strong> Para:. HP Color LaserJet Printers 3600, 3600n, 3600dn.
+Cartucho tóner. HP. Amarillo (4,000págs). <strong>Q6472A.</strong> Para:. HP Color LaserJet Printers 3600, 3600n, 3600dn.
+Cartucho tóner. HP. Magenta (4,000págs). <strong>Q6473A.</strong> Para:. HP Color LaserJet Printers 3600, 3600n, 3600dn.
+Cartucho tóner. HP. Negro (6,500págs). <strong>Q7560A.</strong> Para:. HP LaserJet Printers 3000n, 3000dn.
+Cartucho tóner. HP. Negro con tóner ColorSphere (3,500págs). <strong>CC530A.</strong> Para:. HP Color LaserJet Printers CP2025n, CP2025dn, CP2025x, CM2320n MFP, CM2320nf MFP, CM2320fxi MFP.
+Cartucho tóner. HP. Cyan con tóner ColorSphere (2,800págs). <strong>CC531A</strong>. Para:. HHP Color LaserJet Printers CP2025n, CP2025dn, CP2025x, CM2320n MFP, CM2320nf MFP, CM2320fxi MFP.
+Cartucho tóner. HP. Amarillo con tóner ColorSphere (2,800págs). <strong>CC532A.</strong> Para:. HHP Color LaserJet Printers CP2025n, CP2025dn, CP2025x, CM2320n MFP, CM2320nf MFP, CM2320fxi MFP.
+Cartucho tóner. HP. Magenta con tóner ColorSphere (2,800págs). <strong>CC533A.</strong> Para:. HHP Color LaserJet Printers CP2025n, CP2025dn, CP2025x, CM2320n MFP, CM2320nf MFP, CM2320fxi MFP.
+Cartucho tóner. HP. Negro (5,000págs). <strong>CE250A.</strong> Para:. CP3525n, CP3525dn, CP3525x, CM3530MFP, Cm3530fs MFP.
+Cartucho tóner. HP. Cyan (5,000págs). <strong>CE251A.</strong> Para:. CP3525n, CP3525dn, CP3525x, CM3530MFP, Cm3530fs MFP.
+Cartucho tóner. HP. Amarillo (7,000págs). <strong>CE252A</strong>. Para:. CP3525n, CP3525dn, CP3525x, CM3530MFP, Cm3530fs MFP.
+Cartucho tóner. HP. Magenta (7,000págs). <strong>CE253A</strong>. Para:. CP3525n, CP3525dn, CP3525x, CM3530MFP, Cm3530fs MFP.
+Cartucho toner. HP. Negro 128A (2,000 pags) <strong>CE320A.</strong> Para:. Impresoras HP LaserJet CP1525nw, CM1415fnw MFP.
+Cartucho toner. HP. Cyan 128A (2,000 pags) <strong>CE321A.</strong> Para:. Impresoras HP LaserJet CP1525nw, CM1415fnw MFP.
+Cartucho toner. HP. Amarillo 128A (2,000 pags) <strong>CE322A.</strong> Para:. Impresoras HP LaserJet CP1525nw, CM1415fnw MFP.
+Cartucho toner. HP. Magenta 128A (2,000 pags) <strong>CE323A.</strong> Para:. Impresoras HP LaserJet CP1525nw, CM1415fnw MFP.
+Cartucho toner. HP. Negro 126A (1,200 pags) <strong>CE310A.</strong> Para:. Impresoras HP LaserJet Printers CP1025nw, M175nw MFP.
+Cartucho toner. HP. Cyan 126A (1,000 pags) <strong>CE311A.</strong> Para:. Impresoras HP LaserJet Printers CP1025nw, M175nw MFP.
+Cartucho toner. HP. Amarillo 126A (1,000 pags) <strong>CE312A.</strong> Para:. Impresoras HP LaserJet Printers CP1025nw, M175nw MFP.
+Cartucho toner. HP. Magenta 126A (1,000 pags) <strong>CE313A.</strong> Para:. Impresoras HP LaserJet Printers CP1025nw, M175nw MFP.
+Cartucho toner. HP. Negro 312A ( pags) <strong>CF380A.</strong> Para:. Impresoras HP LaserJet M476NW/M476DW
+Cartucho toner. HP. Cyan 312A ( pags) <strong>CF381A.</strong> Para:. Impresoras HP LaserJet M476NW/M476DW
+Cartucho toner. HP. Yellow 312A ( pags) <strong>CF382A.</strong> Para:. Impresoras HP LaserJet M476NW/M476DW
+Cartucho toner. HP. Magenta 312A ( pags) <strong>CF383A.</strong> Para:. Impresoras HP LaserJet M476NW/M476DW
+Cartucho toner. HP. Negro 507A (5,500 pags) <strong>CE400A.</strong> Para:. Impresoras HP LaserJet Printers HP LASERJET M551 Y M575
+Cartucho toner. HP. Cian 507A (6,000 pags) <strong>CE401A.</strong> Para:. Impresoras HP LaserJet Printers HP LASERJET M551 Y M5756
+Cartucho toner. HP. Amarillo 507A (6,000 pags) <strong>CE402A.</strong> Para:. Impresoras HP LaserJet Printers HP LASERJET M551 Y M575
+Cartucho toner. HP. Magenta 507A (6,600 pags) <strong>CE403A.</strong> Para:. Impresoras HP LaserJet Printers HP LASERJET M551 Y M575
+Cartucho toner. HP. Negro 131A (1,600 pags) <strong>CF210A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 200 COLOR M251 y M276
+Cartucho toner. HP. Cyan 131A (1,800 pags) <strong>CF211A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 200 COLOR M251 y M276
+Cartucho toner. HP. Amarillo 131A (1,800 pags) <strong>CF212A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 200 COLOR M251 y M276
+Cartucho toner. HP. Magenta 131A (1,800 pags) <strong>CF213A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 200 COLOR M251 y M276
+Cartucho toner. HP. Negro 305A (4,000 pags) <strong>CE410X.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 300/ 400/ M351/ M375/ M451/ M475
+Cartucho toner. HP. Negro 305A (2,000 pags) <strong>CE410A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 300/ 400/ M351/ M375/ M451/ M475
+Cartucho toner. HP. Cyan 305A (2,600 pags) <strong>CE411A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 300/ 400/ M351/ M375/ M451/ M475
+Cartucho toner. HP. Amarillo 305 (2,600 pags) <strong>CE412A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 300/ 400/ M351/ M375/ M451/ M475
+Cartucho toner. HP. Magenta 305 (2,600 pags) <strong>CE413A.</strong> Para:. Impresoras HP LaserJet Printers HP PRO 300/ 400/ M351/ M375/ M451/ M475
+Cartucho toner. HP. Negro 60A (12,000 pags) <strong>HQ6460A.</strong> Para:. Impresoras HP LaserJet Printers 4730
+Cartucho toner. HP. Cyan 61A (12,000 pags) <strong>HQ6461A.</strong> Para:. Impresoras HP LaserJet Printers 4730
+Cartucho toner. HP. Yellow 62A (12,000 pags) <strong>HQ6462A.</strong> Para:. Impresoras HP LaserJet Printers 4730
+Cartucho toner. HP. Magenta 63A (12,000 pags) <strong>HQ6463A.</strong> Para:. Impresoras HP LaserJet Printers 4730
+Cartucho toner. HP Negro 130A (1,300 pags)<strong> CF350A</strong> Para:. Impresoras HP LaserJet M177fw
+Cartucho toner. HP Cyan 130A (1,000 pags) <strong>CF351A</strong> Para:. Impresoras HP   LaserJet M177fw
+Cartucho toner. HP Cyan 130A (1,000 pags) <strong>CF351A</strong> Para:. Impresoras HP   LaserJet M177fw
+Cartucho toner. HP Magenta 130A (1,000 pags) <strong>CF353A</strong> Para:. Impresoras HP   LaserJet M177fw
+Cartucho toner. HP Negro 201x (2,800 pags) <strong>CF400x</strong> para HPLaserJetEnterprise500colorM551dn,M551n,M551.
+Cartucho toner. HP Cyan 201x (2,800 pags) <strong>CF401x</strong> para HPLaserJetEnterprise500colorM551dn,M551n,M551.
+Cartucho toner. HP Amarillo 201x (2,800 pags) <strong>CF402x</strong> para HPLaserJetEnterprise500colorM551dn,M551n,M551.
+Cartucho toner. HP Magenta 201x (2,800 pags)<strong> CF403x</strong> para HPLaserJetEnterprise500colorM551dn,M551n,M551.
+Cartucho tóner. HP. Negro (2200pags). <strong>CB540A.</strong> Para:. HP Color LaserJet Printers CP1215, CM1312nfi MFP, CP1515n, CP1518ni.
+Cartucho tóner. HP. Cyan (1400pags). <strong>CB541A</strong>. Para:. HP Color LaserJet Printers CP1215, CM1312nfi MFP, CP1515n, CP1518ni.
+Cartucho tóner. HP. Amarillo (1400pags). <strong>CB542A</strong>. Para:. HP Color LaserJet Printers CP1215, CM1312nfi MFP, CP1515n, CP1518ni.
+Cartucho tóner. HP. Magenta (1400pags). <strong>CB543A.</strong> Para:. HP Color LaserJet Printers CP1215, CM1312nfi MFP, CP1515n, CP1518ni.
+
+
+</pre>
+                      <div class="col-md-2 col-md-offset-5"><a class="btn btn-info btn-block" href="{{ path('hp') }}">Ver todos</a></div>
+                  </div>
+                    
+                    
+                  <div id="samsung" class="tab-pane fade" style="overflow: auto;">
+                      <pre style="font-family: 'Roboto', sans-serif; height: 500px;">
+<strong>SAMSUNG MONOCROMÁTICO</strong>
+
+<strong>Tóner. Samsung. ML-1210D3</strong>  Rendimiento aproximado: 2,500 pág. Color: Negro. Compatibilidad: ML-1210 / 1220M / 1250 / ML-1430.
+<strong>Tóner. Samsung. ML-6060D6</strong>  Rendimiento aproximado: 6,000 pág. Color: Negro. Compatibilidad: ML-1440 / 1450 / 1451N.
+<strong>Tóner. Samsung. ML-1710D3</strong>  Rendimiento aproximado: 3,000 pág. Color: Negro. Compatibilidad: ML-1500 / ML-1510 / ML-1710 / ML-1740 / ML-1750.
+<strong>Tóner. Samsung. ML-2250D5</strong>  Rendimiento aproximado: 5,000 pág. Color: Negro. Compatibilidad: ML-2250 / ML-2251N.
+<strong>Tóner. Samsung. ML-2150D8</strong> Rendimiento aproximado: 8,000 pág. Cartucho de color: Negro. Compatibilidad: ML-2150 / 2151N / 2152W.
+<strong>Tóner. Samsung. ML-1610D2</strong> Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: ML-1610.
+<strong>Tóner. Samsung. ML-2010D3/XAX</strong> Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: ML-2510 / ML-2570 / ML-2571N.
+<strong>Tóner. Samsung. ML-D3050A/XAX</strong> Rendimiento aproximado: 4,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3051N / ML-3051ND.
+<strong>Tóner. Samsung. ML-3560DB/XAX</strong>  Rendimiento aproximado: 12,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3560 / ML-3561N / ML-3561ND.
+<strong>Tóner. Samsung. ML-D3051B/XAX</strong>  Rendimiento aproximado: 8,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3051N / ML-3051ND.
+<strong>Tóner. Samsung. ML-D4550A</strong> Rendimiento aproximado: 20,000 pág. Cartucho de color: Negro. Compatibilidad: ML-4551N / ML-4551ND.
+<strong>Tóner. Samsung. ML-D1630A </strong> Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: ML-1630 / SCX-4500.
+<strong>Tóner. Samsung. MLT-D108S</strong>  Rendimiento aproximado: 1,500 pág. Cartucho de color: Negro. Compatibilidad: ML-1640 / ML-2240.
+<strong>Tóner. Samsung. ML-D2850A</strong>  Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: ML-2851ND.
+<strong>Tóner. Samsung. ML-D3470B</strong>  Rendimiento aproximado: 10,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3470D / ML-3471ND.
+<strong>Tóner. Samsung. ML-3560D6/SEE</strong>  Rendimiento aproximado: 6,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3560 / ML-3561N / ML-3561ND.
+<strong>Tóner. Samsung. ML-D4550B</strong>  Rendimiento aproximado: ALTO REND pág. Cartucho de color: Negro. Compatibilidad: ML-4050 / ML-4051N / ML-4550 / ML-4551N.
+<strong>Toner Samsung. MLT-D105L</strong> Rendimiento aproximado: Alto Rendimiento 2500pág.. Cartucho de color: Negro. Compatibilidad: ML-1910 / ML-1915 / ML-2525 / ML-2525W / ML-2580N / SCX-4600 / SCX-4623F / SCX-4623FN.
+<strong>Tóner. Samsung. MLT-D105S/XAX</strong>  Rendimiento aproximado: 1,500 pág. Cartucho de color: Negro. Compatibilidad: ML-1910 / ML-1915 / ML-2525 / ML-2525W / ML-2580N / SCX-4600 / SCX-4623F / SCX-4623FN.
+<strong>Tóner. Samsung.. MLT-D104S/XAX</strong>  Color: Negro. Rendimiento: 1,500 págs. Compatible con:. ML-1660 / ML-1670 / ML-1675 / ML-1865W / SCX-3200.
+<strong>Tóner. Samsung.. MLT-D101S/XAX</strong>  Color: Negro. Rendimiento: 1,500 págs. Compatible con:. ML-2165W / SCX-3405FW / SF-760P
+<strong>Tóner. Samsung.. MLT-D103S/XAX</strong>  Color: Negro. Rendimiento: 1,500 págs. Compatible con:. ML-295X SERIES / SCX-472X SERIES
+<strong>Tóner. Samsung.. MLT-D111S/XAX</strong>  Color: Negro. Rendimiento: 1,500 págs. Compatible con:. 2070w
+<strong>Tóner. Samsung. MLT-D205S/XAX</strong>  Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: ML-3310ND / ML-3710ND.
+<strong>Tóner. Samsung. SCX-4521D3</strong>  Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4521.
+<strong>Tóner. Samsung. SCX-4216D3</strong> Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4016 / SCX-4216.
+<strong>Tóner. Samsung. SCX-4100D3</strong>  Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4100.
+<strong>Tóner. Samsung. SCX-D4200A</strong>  Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4200.
+<strong>Tóner. Samsung. MLT-D109S</strong> Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4300.
+<strong>Tóner. Samsung. SCX-D4725A</strong> Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4725.
+<strong>Tóner. Samsung. SCX-D5530A</strong> Rendimiento aproximado: 4,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-5530FN.
+<strong>Tóner. Samsung. SCX-6320D8</strong>  Rendimiento aproximado: 8,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-6320 / SCX-6122FN / SCX-6322DN.
+<strong>Tóner. Samsung. SCX-4720D3</strong>  Rendimiento aproximado: 3,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4720.
+<strong>Toner. Samsung. MLT-D209L</strong> Rendimiento aproximado: 5000pág.. Cartucho de color: Negro. Compatibilidad: SCX-4824FN, SCX-4828FN, ML-2855ND
+<strong>Tóner. Samsung. MLT-D209S </strong> Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: SCX-4828FN / ML-2855ND.
+<strong>Toner Samsung MLT-203L</strong> Rendimiento aproximado 5,000 pág. Cartucho de color: Negro Compatibilidad: SL-M3820 / SL-M3870 / SL-M4020 / SL-M4070
+<strong>Toner. Samsung MLT-116L</strong> Rendimiento aproximado: 3,000pág Cartucho de color Negro. Compatibilidad: Xpress SL-M2625 / 2626 / 2825 / 2826, M2675 / 2676 / 2875 / 2876
+
+
+<strong>SAMSUNG COLOR</strong>
+
+<strong>Tóner. Samsung. CLP-500D</strong>7K  Rendimiento apróximado: 7,000 pág. Cartucho de color: Negro. Compatibilidad:  CLP-500.
+<strong>Tóner. Samsung. CLP-500D</strong>5C  Rendimiento aproximado 5,000 pág. Cartucho de color: Cyan. Compatibilidad: CLP-500.
+<strong>Tóner. Samsung. CLP-500D</strong>5M Rendimiento aproximado 5,000 pág. Cartucho de color: Magenta. Compatibilidad:  CLP-500.
+<strong>Tóner. Samsung. CLP-510D</strong>7K Rendimiento aproximado: 7,000 pág. Cartucho de color: Negro. Compatibilidad: CLP-510.
+<strong>Tóner. Samsung. CLP-510D</strong>5M Rendimiento aproximado: 5,000 pág. Cartucho de color: Magenta. Compatibilidad: CLP-510.
+<strong>Tóner. Samsung. CLP-510D</strong>5Y  Rendimiento aproximado: 5,000 pág. Cartucho de color: Amarillo. Compatibilidad: CLP-510.
+<strong>Tóner. Samsung. CLP-K300A </strong>Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: CLP-300, CLX-2160N, CLX-3160FN.
+<strong>Tóner. Samsung. CLP-C300A</strong> Rendiemiento apróximado: 1,000 pág. Cartucho de color: Cyan. Compatibilidad: CLP-300 / CLX-2160N / CLX-3160FN.
+<strong>Tóner. Samsung. CLP-M300A</strong> Rendimiento apróximado: 1,000 pág. Cartucho de color: Magenta. Compatibilidad: CLP-300 / CLX-2160N / CLX-3160FN.
+<strong>Tóner. Samsung. CLP-Y300A</strong> Rendimiento apróximado: 1,000 pág. Cartucho de color: Amarillo. Compatibilidad: CLP-300 / CLX-2160N / CLX-3160FN.
+<strong>Tóner. Samsung. CLP-K310A</strong> Rendimiento aproximado: 2,000 pág. Cartucho de color: Negro. Compatibilidad: CLP-310/315/CLX-3175N NEGRO.
+<strong>Tóner. Samsung. CLP-C310A</strong> Rendiemiento apróximado: 1,000 pág. Cartucho de color: Cyan. Compatibilidad: CLP-310/315/CLX-3175N CYAN.
+<strong>Tóner. Samsung. CLP-M310A</strong> Rendimiento apróximado: 1,000 pág. Cartucho de color: Magenta. Compatibilidad: CLP-310/315/CLX-3175N MAGENTA.
+<strong>Tóner. Samsung. CLP-Y310A</strong> Rendimiento apróximado: 1,000 pág. Cartucho de color: Amarillo. Compatibilidad: CLP-310/315/CLX-3175N AMARILLO.
+<strong>Tóner. Samsung. CLT-K407S</strong>  Rendimiento aproximado: 1,500 pág. Consumible Color: Negro. Compatible: CLP-320, CLP-325 , CLX-3185.
+<strong>Tóner. Samsung. CLT-C407S</strong>  Rendimiento aproximado: 1,500 pág. Consumible Color: Cyan.  Compatibilidad:  CLP-320, CLP-325 , CLX-3185 .
+<strong>Tóner. Samsung. CLT-M407S</strong>  Rendimiento aproximado: 1,500 pág. Consumible Color: Magenta.  Compatibilidad:  CLP-320, CLP-325 , CLX-3185 .
+<strong>Tóner. Samsung. CLT-Y407S</strong>  Rendimiento aproximado: 1,500 pág. Consumible Color: Amarillo.  Compatibilidad:  CLP-320, CLP-325 , CLX-3185 .
+<strong>Tóner. Samsung. CLT-K409S </strong> Rendimiento aproximado: 1,500 pág. Cartucho de color: Negro. Compatibilidad: CLP-310 / CLP-315 / CLX-3170FN / CLX-3175FN.
+<strong>Tóner. Samsung. CLT-C409S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Cyan. Compatibilidad: CLP-310 / CLP-315 / CLX-3170FN / CLX-3175FN
+<strong>Tóner. Samsung. CLT-M409S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Magenta. Compatibilidad: CLP-310 / CLP-315 / CLX-3170FN / CLX-3175FN.
+<strong>Tóner. Samsung. CLT-Y409S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Amarillo. Compatibilidad: CLP-310 / CLP-315 / CLX-3170FN / CLX-3175FN.
+<strong>Tóner. Samsung. CLT-K406S</strong>  Rendimiento aproximado: 1,500 pág. Cartucho de color: Negro. Compatibilidad: CLP-365W
+<strong>Tóner. Samsung. CLT-C406S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Cyan. Compatibilidad: CLP-365W
+<strong>Tóner. Samsung. CLT-M406S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Magenta. Compatibilidad: CLP-365W
+<strong>Tóner. Samsung. CLT-Y406S</strong>  Rendimiento aproximado: 1,000 pág. Cartucho de color: Amarillo. Compatibilidad: CLP-365W
+<strong>Tóner. Samsung. CLT-K504S</strong> Rendimiento aproximado: 2,500 pág. Cartucho color: Negro. Compatibilidad: CLX-4170, CLX-4195FW, CLP-415N, CLP-415NW, CLP-470, CLP-475.
+<strong>Tóner. Samsung. CLT-C504S</strong> Rendimiento aproximado: 1,800 pág. Cartucho color: Cyan. Compatibilidad: CLX-4170, CLX-4195FW, CLP-415N, CLP-415NW, CLP-470, CLP-475.
+<strong>Tóner. Samsung. CLT-M504S</strong> Rendimiento aproximado: 1,800 pág. Cartucho color: Magenta. Compatibilidad: CLX-4170, CLX-4195FW, CLP-415N, CLP-415NW, CLP-470, CLP-475.
+<strong>Tóner. Samsung. CLT-CY504S</strong> Rendimiento aproximado: 1,800 pág. Cartucho color: Amarillo. Compatibilidad: CLX-4170, CLX-4195FW, CLP-415N, CLP-415NW, CLP-470, CLP-475.
+ 
+                      </pre>
+                      <div class="col-md-2 col-md-offset-5"><a class="btn btn-info btn-block" href="{{ path('samsung') }}">Ver todos</a></div>
+                  </div>
+                  
+                  
+                  <div id="brother" class="tab-pane fade" style="overflow: auto;">
+                    <pre style="font-family: 'Roboto', sans-serif; height: 500px;">
+<strong>BROTHER MONOCROMÁTICO</strong>
+
+<strong>Toner TN330</strong> Negro para impresora Brother DCP7040, HL2170W, HL2140, MFC7030N, MFC7440N, MFC7840W
+<strong>Toner TN360</strong> Negro Alto Rendimiento para Borther DCP7040, HL2170W, HL2140, MFC7030N, MFC7440N, MFC7840
+<strong>Toner TN350</strong> para Brother Fax 2820, HL2040, HL2070N, DCP7020, MFC7220, MFC7420
+<strong>Toner TN410</strong> para Fax Brother  DCP-7055 1000 PAGINAS
+<strong>Toner TN420/TN450</strong> para Fax Brother  HL2240 HL2270DW 1200 PAGINAS
+<strong>Toner TN430</strong> para Fax Brother 4750e, 5750, MFC8300, MFC8500, MFC8600, MFC8700, MFC9600, MFC9700, MFC9800
+<strong>Toner TN460</strong> Negro para Brother HL1240, 1250, 1440, 1450, DCP1200
+<strong>Toner TN540</strong> Negro para impresora Brother PT HL5100, MFC8440, 55840D, 8840D
+<strong>Toner TN550/580</strong> para Brother HL5240, HL5250DN, HL5280DW,DCP8060, DCP8065DN, MFC8460N, MFC8860DN, MFC8870DW
+<strong>Toner TN570</strong> Negro Alto Rendimiento para Brother HL5240, 5250DN
+<strong>Toner TN580</strong> Negro Alto Rendimiento para Brother HL5240, HL5250DN, HL5280DW,DCP8060, DCP8065DN, MFC8460N, MFC8860DN, MFC8870DW
+<strong>Toner TN620</strong> Negro Rendimiento Estandar para Brother HL5340D, 5370W, MFC8480DN, MFC8890DW, DCP8080DN, 8085DN
+<strong>Toner TN650</strong> Negro Alto Rendimiento para Brother  HL5340D, 5370W, MFC8480DN, MFC8890DW, DCP8080DN, 8085DN
+<strong>Toner TN660</strong> Alto Rendimiento para Brother HLL2360DW DCPL2540DW MFCL2700
+<strong>Toner TN720</strong> Negro Rendimiento Estándar para Brother  HL5170DN
+<strong>Toner TN780</strong> Negro Super Alto Rendimiento (12000 PAG.) HL-6180DW, MFC-8950DWT, HL-6180DWT, MFC-8950DW
+<strong>Toner TN750</strong> Negro Alto Rendimiento para Brother  HL5170DN
+<strong>Toner TN1060</strong> Negro Alto Rendimiento para Brother
+<strong>Unidad de Drum DR350</strong> (12000 PAG.) para impresoras: Brother HL 2040, HL-2045, HL-2070, HL-2460, HL-2075N , HL- 2070N; Brother DCP7020, DCP-7010, DCP-7025; Brother MFC-7220, MFC- 7225, MFC-7420, MFC-7820, MFC-7220, MFC-7225N, MFC-7420, MFC- 7820N; Brotheri ntellifax-2820,intellifax-2920,IntelliFax-2910, IntelliFax- 2920.
+<strong>Unidad de Drum DR360</strong> (12000 PAG.) para impresoras: Brother HL-2140, HL-2170W, HL-2150N; BrotherDCP-7030, DCP- 7040; BrotherMFC-7440N, MFC-7840W, MFC-7340, MFC-7345N;
+<strong>Unidad de Drum DR420</strong> (12000 PAG.) para impresoras: Brother HL-2240, HL-2240D, HL-2250DN, HL-2270DW, HL-2220, HL-2230, HL- 2275DW, HL-2280DW; Brother MFC-7360, MFC-7460DN, MFC-7860D, MFC-7240, MFC-7360N, MFC-7460DN, MFC-7860DWBrotherDCP-7060,DCP- 7065DN,DCP-7055, DCP-7060D.
+<strong>Unidad de Drum DR500/DR510</strong> (20000 PAG.) para impresoras:Brother MFC-8420, MFC-8820D, MFC-8820DN, MFC-8220, MFC-8440, MFC-8840D, MFC-8840DN, MFC-8120; Brother DCP-8020, DCP-8025D, DCP-8040, DCP-8045D; Brother HL-1650, HL-1670N, HL-1850, HL-1870N, HL-5030, HL-5040, HL-5050, HL-5070N, HL-5140, HL-5150D, HL-5150DLT, HL-5170DN, HL-5170DNLT.
+<strong>Unidad de Drum DR520 (</strong>25000 PAG.) para impresoras:Brother HL-5240, HL-5250DN, HL-5250DNT, HL-5280DW; Brother DCP-8060, DCP-8065DN; Brother MFC-8460N, MFC-8660DN, MFC-8670DN, MFC-8860DN, MFC- 8870DW
+<strong>Unidad de Drum DR620</strong> (25000 PAG.) para impresoras: Brother HL5340D, HL-5350DN, HL-5370DW, HL-5380DN, HL-5370DWT; Brother DCP8085DN, DCP-8080DN, DCP-8380DN, DCP-8480DN, DCP- 8890DW, DCP-8880DN, MFC-8680DN, MFC-8690DW.
+<strong>Unidad de Drum DR630</strong> (12000 PAG.) para impresoras: DCP8050DN/ 8080DN/ 8085DN HL5340D/ 5350/ 5370/ 5370DW/ 5380 MFC8370/ 8480DN/ 8680DN/ 8690DW/ 8880DN/ 8890DW.
+<strong>Unidad de Drum DR720</strong> (30000 PAG.) para impresoras: Brother HL-5440D, HL-5450DN, HL-5450DNT, HL- 5470DW, HL-5470DWT, HL-
+6180DW,HL-6180DWT,HL-5452DN,HL-5472DW,HL-5472DWT,HL-6182DW,HL-6182DWT;Brother MFC-8710DW,MFC-8910DW,MFC-8950DW, MFC-8950DWT, MFC-8510DN, MFC-8810DW, MFC-8512DN, MFC- 8712DW, MFC-8912DW, MFC-8952DW.
+<strong>Unidad de Drum DR1060</strong> (10000 PAG.) para impresoras: Brother HL-1110; HL-1112; HL-1111; HL-1118; DCP-1511; DCP-1518; MFC- 1811; MFC-1813; MFC-1818; MFC-1815; DCP-1510;DCP-1512;MFC-1810.
+
+
+<strong>BROTHER COLOR</strong>
+
+<strong>Toner TN310 / 315C</strong> Cian para impresoras Brother MFC9970CDW
+<strong>Toner TN310 / 315N</strong> Negro para impresoras Brother MFC9970CDW
+<strong>Toner TN310 / 315M</strong> Magenta para impresoras Brother MFC9970CDW
+<strong>Toner TN310 / 315Y</strong> Amarillo para impresoras Brother MFC9970CDW
+<strong>Toner TN210BK</strong> Negro para impresoras Brother P/HL3040 HL3070 NEGRO
+<strong>Toner TN210C</strong> Cyan para impresoras Brother P/HL3040 HL3070 CYAN
+<strong>Toner TN210M</strong> Magenta para impresoras Brother P/HL3040 HL3070 MAGENTA
+<strong>Toner TN210Y</strong> Amarillo para impresoras Brother P/HL3040 HL3070 AMARILLO
+<strong>Toner TN221BK</strong> Negro para impresoras Brother P/MFC9130CW, MFC9330CDW
+<strong>Toner TN221C</strong> Cyan para impresoras Brother P/MFC9130CW, MFC9330CDW
+<strong>Toner TN221M</strong> Magenta para impresoras Brother P/MFC9130CW, MFC9330CDW
+<strong>Toner TN221Y</strong> Amarillo para impresoras Brother P/MFC9130CW, MFC9330CDW
+<strong>Toner TN110BK</strong> Negro para impresoras Brother HL4040CN, HL4070CDW, DCP9040CN, DCP9045CDN, MFC944CN, MFC9840CDW
+<strong>Toner TN110C</strong> Cian para impresoras Brother HL4040CN, HL4070CDW, DCP9040CN, DCP9045CDN, MFC944CN, MFC9840CDW
+<strong>Toner TN110M</strong> Magenta para impresoras Brother HL4040CN, HL4070CDW, DCP9040CN, DCP9045CDN, MFC944CN, MFC9840CDW
+<strong>Toner TN110Y</strong> Amarillo para impresoras Brother HL4040CN, HL4070CDW, DCP9040CN, DCP9045CDN, MFC944CN, MFC9840CDW
+<strong>Toner. </strong><strong>TN 336BK</strong> Negro para impresoras Brother HL-L8250, Brother HL-L8250CDN, Brother HL-L8350, Brother HL-L8350CDW, Brother HL-L8350CDWT, Brother MFC-L8600, Brother MFC-L8600CDW, Brother MFC-L8850, Brother MFC-L8850CDW
+<strong>Toner. TN 336M</strong> Magenta para impresoras Brother HL-L8250, Brother HL-L8250CDN, Brother HL-L8350, Brother HL-L8350CDW, Brother HL-L8350CDWT, Brother MFC-L8600, Brother MFC-L8600CDW, Brother MFC-L8850, Brother MFC-L8850CDW
+<strong>Toner. TN 336Y</strong> Amarillo para impresoras Brother HL-L8250, Brother HL-L8250CDN, Brother HL-L8350, Brother HL-L8350CDW, Brother HL-L8350CDWT, Brother MFC-L8600, Brother MFC-L8600CDW, Brother MFC-L8850, Brother MFC-L8850CDW
+<strong>Toner. TN 336C</strong> Cyan para impresoras Brother HL-L8250, Brother HL-L8250CDN, Brother HL-L8350, Brother HL-L8350CDW, Brother HL-L8350CDWT, Brother MFC-L8600, Brother MFC-L8600CDW, Brother MFC-L8850, Brother MFC-L8850CDW  
+                      </pre>
+                      <div class="col-md-2 col-md-offset-5"><a class="btn btn-info btn-block" href="{{ path('hp') }}">Ver todos</a></div>
+                    
+                  </div>
+                  <div id="xeror" class="tab-pane fade" style="overflow: auto;">
+                    <pre style="font-family: 'Roboto', sans-serif; height: 500px;">
+<strong>XEROX MONCROMÁTICO</strong>
+
+XEROX <strong>106R01159</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3117, 3122, 3124, 3125 (3,000 págs)
+XEROX <strong>106R01485</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre 3210, 3220 (2,000 págs)
+XEROX <strong>108R00794</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3635 (5,000 págs)
+XEROX <strong>106R01415</strong> Toner Negro. Alto Rendimiento. Compatible con: Phaser 3435_DN (10,000 págs)
+XEROX <strong>108R00908</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3140, 3160 (1,500 págs)
+XEROX <strong>109R00725</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3120, 3130
+XEROX <strong>006R00255</strong> Toner Negro Rendimiento Estándar. Compatible con: 5018, 5021, 5025, 5028, 5034, 5334 5426, 575 (10,000 págs)
+XEROX <strong>109R00746</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3150 (3,500 págs)
+XEROX <strong>106R01411</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3300 (4,000 págs)
+XEROX <strong>109R00748</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3116 (3,000 págs)
+XEROX <strong>106R02180</strong> Toner Negro Alto rendimiento (2.2pag). Compatible con WorkCentre 3045/3010, Phaser 3040
+XEROX <strong>013R00625</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre 3119 (3,000 págs)
+XEROX <strong>106R01529</strong> Toner Negro Rendimiento Estandar. Compatible con: Workcentre 3550 (5,000 págs)
+XEROX <strong>106R01531</strong> Toner Negro Rendimiento Estandar. Compatible con: Workcentre 3550 (11,000 págs)
+XEROX <strong>013R00621</strong> Toner/Tambor Rendimiento Estándar. Compatible con: Workcentre PE220D (3,000 págs)
+XEROX <strong>106R01378</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3100 (2,200 págs)
+XEROX <strong>113R00735</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 3200 (2,000 págs)
+XEROX <strong>013R00601</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre PE120 (3,500 págs)
+XEROX<strong> 006R01278</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre 4118 (8,000 págs)
+XEROX <strong>106R01047</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre M20, C20, M20i
+XEROX <strong>013R00607</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcentre PE114e (3,000 págs)
+XEROX <strong>106R00584</strong> Toner Negro Rendimiento Estándar. Compatible con: Workcenter Pro 412, M15, M15i (6,000 págs)
+
+<strong>XEROX COLOR</strong>
+
+XEROX <strong>113R00722</strong> Toner Negro Rendimiento Estandar. Compatible con: Phaser 6180 (3,000 págs)
+XEROX <strong>113R00719</strong> Toner Cyan Rendimiento Estandar. Compatible con: Phaser 6180 (2,000 págs)
+XEROX <strong>113R00720</strong> Toner Magenta Rendimiento Estandar. Compatible con: Phaser 6180 (2,000 págs)
+XEROX <strong>113R00721</strong> Toner Amarillo Rendimiento Estandar. Compatible con: Phaser 6180 (2,000 págs)
+XEROX <strong>106R01338</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 6125 (1,000 páginas)
+XEROX <strong>106R01335</strong> Toner Cyan Rendimiento Estándar. Compatible con: Phaser 6125 (1,000 páginas)
+XEROX <strong>106R01336</strong> Toner Magenta Rendimiento Estándar. Compatible con: Phaser 6125 (1,000 páginas)
+XEROX <strong>106R01335</strong> Toner Amarillo Rendimiento Estándar. Compatible con: Phaser 6125 (1,000 páginas)
+XEROX <strong>106R01281</strong> Toner Negro Rendimiento Estándar. Compatible con: Phaser 6130 (2,500 páginas)
+XEROX <strong>106R01278</strong> Toner Cyan Rendimiento Estándar. Compatible con: Phaser 6130 (1,900 páginas)
+XEROX <strong>106R01279</strong> Toner Magenta Rendimiento Estándar. Compatible con: Phaser 6130 (1,900 páginas)
+XEROX <strong>106R01280</strong> Toner Amarillo Rendimiento Estándar. Compatible con: Phaser 6130 (1,900 páginas)
+XEROX <strong>106R01476</strong> Toner Negro Rendimiento Alto . Compatible con: Phaser 6121 (2,600 páginas)
+XEROX <strong>106R01463</strong> Toner Cyan Rendimiento Estándar. Compatible con: Phaser 6121 (1,500 páginas)
+XEROX <strong>106R01464</strong> Toner Magenta Rendimiento Estándar. Compatible con: Phaser 6121 (1,500 páginas)
+XEROX <strong>106R01465</strong> Toner Amarillo Rendimiento Estándar. Compatible con: Phaser 6121 (1,500 páginas)
+XEROX <strong>106R01598</strong> Toner Cyan 6500/6505 (1000 páginas)
+XEROX <strong>106R01599</strong> Toner Magenta 6500/6505(1000 páginas)
+XEROX <strong>106R01560</strong> Toner Amarillo 6500/6505 (1000 páginas)
+XEROX <strong>106R01604</strong> Toner Negro 6500/6505 3(000 páginas)
+                      </pre>
+                    
+                  </div>
+                  <div id="lexmark" class="tab-pane fade" style="overflow: auto;">
+                    <pre style="font-family: 'Roboto', sans-serif; height: 500px;">
+<strong>Tóner Lexmark 24018SL</strong>. Negro Rendimiento Estándar (2.500 pag). Compatible con: Impresora monocromática E232, E330, E332, E230, E240, E342.
+<strong>Tóner Lexmark E260A11L.</strong> Negro Rendimiento Estandar (3.500 págs). Compatible con: E260, E360, E460.
+<strong>Tóner Lexmark E360H11L.</strong> Negro Rendimiento Alto (9.000 págs). Compatible con: E360, E460.
+<strong>Tóner Lexmark E460X11L.</strong> Negro Rendimiento Alto (15.000 págs). Compatible con: E360, E460.
+<strong>Tóner Lexmark 10S0063.</strong> Negro Rendimiento Estándar. Compatible con: E210.
+<strong>Tóner Lexmark 12A7415.</strong> Negro Rendimiento Normal (5.000 pag). Compatible con: T420,T420d.
+<strong>Tóner Lexmark 12A8420.</strong> Negro Rendimiento Estándar (6.000 pag). Compatible con: T430,T430d,T430dn.
+<strong>Tóner Lexmark 13T0101.</strong> Negro Rendimiento Normal (6,000 pag). Compatible con: E310, E312, E312L.
+<strong>Tóner Lexmark 34018HL.</strong> Negro Rendimiento Alto (6.000 pag). Compatible con: E340, E330, E332, E332N, E342N.
+<strong>Tóner Lexmark 64018HL.</strong> Negro Rendimiento Alto (21.000 pag). Compatible con: T640, T642, T644
+<strong>Tóner Lexmark 64018SL.</strong> Negro Rendimiento Estándar (6.000 pag). Compatible con: T640, T642, T644
+<strong>Tóner Lexmark 64418XL.</strong> Negro Rendimiento Alto (32.000 pag). Compatible con:  T640, T642, T644
+<strong>Tóner Lexmark T650A11L.</strong> Negro Rendimiento Estándar (7,000 págs). Compatible con: T650, T652, T654 KIT
+<strong>Tóner Lexmark T650H11L.</strong> Negro Rendimiento Alto  (25,000 págs). Compatible con: T650, T652, T654 KIT
+<strong>Tóner Lexmark T650X11L.</strong> Negro Rendimiento Super Alto  (36,000 págs). Compatible con: T650, T652, T654 KIT
+<strong>Tóner Lexmark 08A0476</strong>. Negro Rendimiento Estándar (3.000 pag). Compatible con: E320, E322
+<strong>Tóner Lexmark 12018SL.</strong> Negro Rendimiento Estándar (2.000 pag). Compatible con E120,E120n.
+<strong>Tóner Lexmark 12A0825.</strong> Negro Rendimiento Alto (23.000 pag). Compatible con: Optra SE 3455, 3455N.
+<strong>Tóner Lexmark 12A4710.</strong> Negro Rendimiento Estándar (6.000 pag). Compatible con:  X422.
+<strong>Tóner Lexmark 12A5840.</strong> Negro Rendimiento Estándar (10.000 pag). Compatible con Optra T610/T612/T614/T616.
+<strong>Tóner Lexmark 12A6835.</strong> Negro Rendimiento Alto (20.00 pag). Compatible con T520, T522, X520, X522
+<strong>Tóner Lexmark 12A6860.</strong> Negro Rendimiento Estándar (10.000 pag). Compatible con: T620, T620dn, T620n, T622, T622dn, T622n, X620e.
+<strong>Tóner Lexmark 12A7400.</strong> Negro Rendimiento Estándar (3.000 pag). Compatible con: E321, E323
+<strong>Tóner Lexmark 12A7460.</strong> Negro Rendimiento Estándar (5.000 pag). Compatible con: T630, T630n, T630dn, T632, T632n, T632tn, T632dtn, T632dtnf, T634, T634n, T634tn, T634dtn, T634dtnf, X630, X632e, X632.
+<strong>Tóner Lexmark 12S0400.</strong> Negro Rendimiento Estándar. Compatible con: E220, E321, E323.
+<strong>Tóner Lexmark E250A11L.</strong> Negro Rendimiento Estándar (3.500 pag). Compatible con: E250D, E350D, E352.
+<strong>Tóner Lexmark E450A11L.</strong> Negro Rendimiento Estándar (6.000 pag). Compatible con: E450.
+<strong>Tóner Lexmark 18S0090.</strong> Negro Rendimiento Alto (3,200 pag). Compatible con: X215  (3,200 pags)
+<strong>Toner Lexmark X264A11G.</strong> Negro Rendimiento Estandar (3,500 págs). Compatible con: X264, X363, X364
+<strong>Toner Lexmark X203A11G.</strong> Negro Rendimiento Estandar (2,500 págs). Compatible con: X203n/ X204n
+<strong>Tóner Lexmark 12A4715.</strong> Negro Rendimiento Alto (12.000 pag). Compatible con: X422, (10,000 pags)
+<strong>Tóner Lexmark X203A11G.</strong> Negro Rendimiento Estandar (3.500 págs). Compatible con: X203, 204
+<strong>Toner Lexmark X463A11G.</strong> Negro Rendimiento Estandar (3,500págs.) Compatible con: X463/X464/X466
+<strong>Tóner Lexmark X463H11G.</strong> Negro Alto rendimiento (9,000págs.). Compatible con: X463/X464/X466
+<strong>Tóner Lexmark X463X11G.</strong> Negro Super Alto rendimiento (15,000págs.). Compatible con: X463/X464/X466
+                      </pre>
+                    
+                  </div>
+                  <div id="canon" class="tab-pane fade" style="overflow: auto;">
+                    <pre style="font-family: 'Roboto', sans-serif; height: 500px;">
+<strong>Toner Canon 103 (7616A003AA)</strong> Negro para LBP3000
+<strong>Toner Canon 104 (0263B001AA)</strong> Negro para MF4150, MF4270, MF4690, MF4350, MF4370; Faxphone L90
+<strong>Toner Canon 106 (0264B001AA)</strong> Negro para MF6530, MF6540, MF6550, MF6590
+<strong>Toner Canon 119 (3479B001AA)</strong> Negro para ImageCLASS LBP6300dn/LBP6650dn/MF5850dn/MF5880dn/MF5950dw/MF5960dn
+<strong>Toner Canon X25 (8489A001AA)</strong> Negro para MF3240, MF5770, MF3110, MF5730, MF5750
+<strong>Toner Canon 125 (3484B001AA)</strong> Negro para Canon imageCLASS MF3010
+<strong>Toner Canon 128 (3500B001AA)</strong> Negro para ImageCLASS MF4450, imageCLASS MF4570dn, imageCLASS D550
+<strong>Toner Canon 120 (2617B001AA)</strong> Negro para D1120, D4450
+<strong>Toner Canon EP-26 (8489A003AA)</strong> Negro para LBP3200
+<strong>Toner Canon EP-25 (5773A003AA)</strong> Negro para LBP1210
+<strong>Toner Canon EP-22 (1550A001AA)</strong> Negro para LBP1120
+<strong>Toner Canon E-20 (1492A002AA)</strong> Negro para PC-430, PC-170; PC300, 325, 330L, 400, 425, 428, 745, 920, 950, 940, 941, 140, 150, 160
+<strong>Toner Canon E-40 (1491A002AA)</strong> Negro Alto Rendimiento para PC-430, PC-170; PC300, 325, 330L, 400, 425, 428, 745, 920, 950, 940, 941, 140, 150, 160
+<strong>Toner Canon L50 (6812A001AA)</strong> Negro para D660, 680, 860, 861, 880
+<strong>Toner Canon S35 (7833A001AA)</strong> Negro para D340, D320
+<strong>Cartucho Canon FX-3 (1557A002BA)</strong> Negro para Fax L3500/ L4000/ L600. Codigo auxiliar (1557A013AA)
+<strong>Cartucho Canon 131 (6272B001AA)</strong> Negro
+<strong>Cartucho Canon 131 (6271B001AA)</strong> Cyan
+<strong>Cartucho Canon 131 (6270B001AA)</strong> Magenta
+<strong>Cartucho Canon 131 (6269B001AA)</strong> Amarillo
+                      </pre>
+                    
+                  </div>
+                  <div id="dell" class="tab-pane fade" style="overflow: auto;">
+                    
+                    
+                  </div> 
+                    
+                    
+                </div>
+              </div>
+
+            
+
+                      
+        </section>
+	
+                      
+        <section style="    background-color: #e8e8e8;">
+            <!--  -->
+                <div class="container" style="    padding-top: 30px;" >
+                <div class="row" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px; text-align: center;">
+                        <div class="col-xs-12 col-sm-4 aligncenter client">                           
+                             <img class="img-valores"  alt="logo" src="{{ asset('public/img/clients/valor1.png') }}"  />                                              
+                             <h3>Facil Devolucion</h3>
+                             <p>Hemos creado una corta y clara política de devolución. En caso de que un producto sea defectuoso o incluso si usted pidió el artículo incorrecto, tenemos todo cubierto.</p>
+                        </div>
+                    
+                        <div class="col-xs-12 col-sm-4 aligncenter client">
+                            <img class="img-valores "  alt="logo" src="{{ asset('public/img/clients/valor3.png') }}"  />
+                             <h3>Entrega RAPIDA</h3>
+                             <p>Las órdenes emitidas antes de las 4:30 pm Hora del Este, son procesados el mismo día laboral y para asegurar que usted obtenga sus artículos RAPIDO, nosotros enviamos desde más de 12 almacenes en todo el país.</p>
+                        </div>
+                    
+                        <div class="col-xs-12 col-sm-4 aligncenter client">
+                            <img class="img-valores"  alt="logo" src="{{ asset('public/img/clients/valor4.png') }}"  />
+                             <h3>100% de Garantia</h3>
+                             <p>Todos los productos que vendemos son confeccionados por fabricantes de renombre y cumplen con los más altos estándares de calidad.</p>
+                        </div>
+                    
+                </div>
+		</div>
+               
+        </section>              
+                      
+	<section id="content">
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="text-center">
+					<h1>Nuestros clientes siempre nos  <span class="highlight">recomiendan</span> </h1>					
+                                        <hr class="colorgraph"/>
+                                        <p>Dejanos tener el placer de atenderte y disfruta de los beneficios de comprar en Toner-economico</p>
+				</div>
+			</div>		
+		</div>
+		</div>
+
+       
+	</section>
+        {% endblock %}                     
+	
+        
+        {% block footer %}
+	<footer>
+	<div class="container">
+            
+		<div class="row">
+                    
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Toner Economico</h4>
+					<address>
+					<strong>Dr. Velasco 193 Despacho 101</strong><br>
+					 Col. Doctores Del. Cuauhtemoc <br>
+					 CDMX   C.P. 06720 </address>
+					<p>
+						<i class="fa fa-phone"></i> +(55) 67199776  <br>
+						<i class="fa fa-envelope"></i> ventas@toner-economico.com
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Marcas</h4>
+					<ul class="link-list">
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 8 , 'page': 1}) }}">HP</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 7 , 'page': 1}) }}">Samsung</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 6 , 'page': 1}) }}">Brother</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 5 , 'page': 1}) }}">Xerox</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 4 , 'page': 1}) }}">LexMark</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 3 , 'page': 1}) }}">Canon</a></li>
+                                            <li><a href="{{ path('toner_vermarca', { 'id': 2 , 'page': 1}) }}">Dell</a></li>
+                                        </ul>
+				</div>
+				
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Páginas</h4>
+					<ul class="link-list">
+						<li><a href="{{ path('toner_homepage') }}">Inicio</a></li>
+						<li><a href="{{ path('toner_privacidad') }}">Privacidad</a></li>
+						<li><a href="{{ path('toner_terminos') }}">Politicas de venta</a></li>
+						<li><a href="{{ path('toner_nosotros') }}">Acerca de nosotros</a></li>
+						<li><a href="{{ path('toner_contacto') }}">Contactenos</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3 col-lg-3">
+				<div class="widget">
+					<h4>Pedir que me contacten</h4>
+					<p>escribe tu numero de telefono para pedir que un asesor se contacte contigo</p>
+                    <div class="form-group multiple-form-group input-group">
+                        <input type="tel" name="email" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-theme btn-add">Pedir Contacto</button>
+                        </span>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="sub-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+                                                    <span>&copy; Toner Economico 2016 All right reserved. | </span>
+                            
+						
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network">
+						<li><a href="https://www.facebook.com/tonereconomico/" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/tonereconomico1" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/u/0/" data-placement="top" title="Twitter"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
+        {% endblock %}
+       
+</div>
+
+
+{% block js %}        
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="{{ asset('public/js/jquery.min.js') }}"></script>
+
+<script src="{{ asset('public/js/jquery.easing.1.3.js') }}"></script>
+<script src="{{ asset('public/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('public/plugins/flexslider/jquery.flexslider-min.js') }}"></script> 
+<script src="{{ asset('public/plugins/flexslider/flexslider.config.js') }}"></script>
+<script src="{{ asset('public/js/box.js') }}"></script>
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '3417dee56fe8b16968149aacc47fd71755170f62';
+window.smartsupp||(function(d) {
+	var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+	s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+	c.type='text/javascript';c.charset='utf-8';c.async=true;
+	c.src='//www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+
+
+
+{% endblock %}
+	
+</body>
+</html>

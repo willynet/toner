@@ -1,0 +1,55 @@
+
+{% extends "TonerBundle:Default:admin.html.twig" %}                      
+{% block marcas %} {% endblock %}
+{% block body -%}
+     {{ parent() }}
+   <div class="container">
+       <div class="row">           
+        <div class="col-md-12">
+            
+                <h2>Nombre:{{ entity.nombre }}</h2>
+                <hr class="colorgraph">
+            
+        </div>
+                   
+       </div>  
+       
+        <div class="row">
+            <div class="col-md-5 text-center">
+                    <div>
+                        <img class="thumbnail" src="{{ entity.imagen }}" style="width: 350px;"/>
+                    </div>                      
+                </div>     
+            <div class="col-md-7">
+                <h3>Cartucho:  &nbsp; {{ entity.cartucho }}</h3>
+                <h3>Rendimiento:  &nbsp; {{ entity.rendimiento }}</h3>
+                <h3>ModeloImp: &nbsp;{{ entity.modeloImp }}</h3>
+                <h3>Color: &nbsp;{{ entity.color }}</h3>
+                <h3>Tipo: &nbsp;{{ entity.tipo }}</h3>
+                <h3>Precio: &nbsp; {{ entity.precio }}</h3>
+                
+                 <a class="btn btn-large btn-success" href="{{ path('producto_edit', { 'id': entity.id }) }}">Editar</a>
+                 <a class="btn btn-large btn-primary" href="{{ path('producto') }}">Ver lista</a>
+                 <hr class="colorgraph">
+              <div class="col-lg-12">
+            {{ form_start(delete_form) }}
+            <br>
+                 <p>
+                {{ form_widget(delete_form.eliminar, { 'label' : 'Eliminar' , 'attr' : { 'class' : 'btn btn-danger btn-large' } }) }}
+                 </p>
+            {{ form_end(delete_form) }}
+            </div>
+            </div>
+            
+        </div>
+         
+    </div>
+
+    
+
+        
+    {% endblock %}
+
+
+
+  

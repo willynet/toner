@@ -1,0 +1,79 @@
+toner_producto:
+    resource: "@TonerBundle/Resources/config/routing/producto.yml"
+    prefix:   /admin/producto
+
+toner_marca:
+    resource: "@TonerBundle/Resources/config/routing/marca.yml"
+    prefix:   /admin/marca
+
+toner_homepage:
+    path:     /
+    defaults: { _controller: TonerBundle:Default:index }
+
+toner_homepage_2:
+    path:     /index
+    defaults: { _controller: TonerBundle:Default:index }
+
+toner_contacto:
+    path:     /contacto
+    defaults: { _controller: TonerBundle:Default:contacto }
+
+toner_compra:
+    path:     /compra/{producto}
+    defaults: { _controller: TonerBundle:Default:compra }
+
+toner_privacidad:
+    path:     /privacidad
+    defaults: { _controller: TonerBundle:Default:privacidad }
+    
+toner_terminos:
+    path:     /politica
+    defaults: { _controller: TonerBundle:Default:terminos }
+    
+toner_nosotros:
+    path:     /nosotros
+    defaults: { _controller: TonerBundle:Default:nosotros }
+    
+toner_vermarca:
+    path:     /vermarca/{id}/{page}/
+    defaults: { _controller: TonerBundle:Default:marca,  page: 1}
+
+producto_verdetalle:
+    path:     /verproducto/{id}
+    defaults: { _controller: TonerBundle:Default:producto }
+
+user_homepage:
+    path:     /admin/home
+    defaults: { _controller: TonerBundle:Default:home }
+    
+user_login:
+    path:     /login
+    defaults: { _controller: TonerBundle:Security:login }
+
+user_login_check:
+    path:     /login_check
+    defaults: { _controller: TonerBundle:Security:loginCheck }
+
+user_logout:
+    path:     /logout
+    
+toner_buscar:
+    path:     /buscar
+    defaults: { _controller: TonerBundle:Default:buscar }
+    requirements: { _method: post }
+
+hp:
+    path:     /hp
+    defaults: { _controller: TonerBundle:Default:hp }
+
+samsung:
+    path:     /samsung
+    defaults: { _controller: TonerBundle:Default:samsung }
+    
+enviarmensaje:
+    path:     /enviarmensaje
+    defaults: { _controller: TonerBundle:Default:enviarmensaje }  
+    
+enviarcompra:
+    path:     /enviarcompra
+    defaults: { _controller: TonerBundle:Default:enviarcompra }

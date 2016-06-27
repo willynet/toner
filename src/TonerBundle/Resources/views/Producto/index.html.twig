@@ -1,0 +1,50 @@
+{% extends "TonerBundle:Default:admin.html.twig" %}                      
+{% block marcas %} {% endblock %}
+{% block body -%}
+     {{ parent() }}
+   <div class="container">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h2>Productos</h2>
+                <hr class="colorgraph">
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        
+                        <th>Nombre</th>
+                        <th>Cartucho</th>
+                        <th>Compatibilidad</th>
+                        <th>Precio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for entity in entities %}
+                    <tr>
+                        
+                        <td>{{ entity.nombre }}</td>
+                        <td>{{ entity.cartucho }}</td>
+                        <td>{{ entity.modeloImp }}</td>
+                        <td class="text-success"> <p><strong>{{ entity.precio }}</strong></p></td>
+                        <td>
+                                <a class="btn btn-info " href="{{ path('producto_show', { 'id': entity.id }) }}">Ver</a>                         
+                                <a class="btn btn-success " href="{{ path('producto_edit', { 'id': entity.id }) }}">Editar</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+            
+        </div>
+         <a class="btn btn-primary btn-large" href="{{ path('producto_new') }}">
+                Agregar nuevo producto
+            </a>
+    </div>
+
+    
+
+        
+    {% endblock %}

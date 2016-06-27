@@ -1,0 +1,30 @@
+marca:
+    path:     /
+    defaults: { _controller: "TonerBundle:Marca:index" }
+
+marca_show:
+    path:     /{id}/show
+    defaults: { _controller: "TonerBundle:Marca:show" }
+
+marca_new:
+    path:     /new
+    defaults: { _controller: "TonerBundle:Marca:new" }
+
+marca_create:
+    path:     /create
+    defaults: { _controller: "TonerBundle:Marca:create" }
+    requirements: { _method: post }
+
+marca_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "TonerBundle:Marca:edit" }
+
+marca_update:
+    path:     /{id}/update
+    defaults: { _controller: "TonerBundle:Marca:update" }
+    requirements: { _method: post|put }
+
+marca_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "TonerBundle:Marca:delete" }
+    requirements: { _method: post|delete }

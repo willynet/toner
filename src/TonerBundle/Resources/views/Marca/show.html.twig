@@ -1,0 +1,42 @@
+
+{% extends "TonerBundle:Default:admin.html.twig" %}                      
+{% block marcas %} {% endblock %}
+{% block body -%}
+     {{ parent() }}
+   <div class="container">
+       <div class="row">           
+        <div class="col-md-12">
+            
+                <h2>Nombre:{{ entity.nombre }}</h2>
+                <hr class="colorgraph">
+            
+        </div>
+                <div class="col-md-12 text-center">
+                    <div style="text-align: center;">
+                        <img class="thumbnail" src="{{ entity.imagen }}" style="width: 150px ; height: 50px ; display: inline-block;"/>
+                    </div>                      
+                </div>        
+       </div>  
+       
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div style="text-align: center;">
+                 <a class="btn btn-large btn-success" href="{{ path('marca_edit', { 'id': entity.id }) }}">Editar</a>
+                 <a class="btn btn-large btn-info" href="{{ path('marca') }}">Ver lista</a>
+                 <hr class="colorgraph">
+                {{ form(delete_form) }}
+               </div> 
+            </div>
+            
+        </div>
+         
+    </div>
+
+    
+
+        
+    {% endblock %}
+
+
+
+  

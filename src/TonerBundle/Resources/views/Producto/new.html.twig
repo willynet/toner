@@ -1,0 +1,83 @@
+
+{% extends "TonerBundle:Default:admin.html.twig" %}                      
+{% block marcas %} {% endblock %}
+{% block body -%}
+     {{ parent() }}
+   <div class="container">
+       <br>
+       
+       <div class="row well">           
+        <div class="col-md-12">
+            <div class="page-header">
+                <h1>Agregar nuevo Producto</h1>
+            </div>
+            
+            <div class="col-md-6">
+            {{ form_start(form ,{ 'attr' : {'role' : 'form'}}) }}
+            <div class="form-group">
+                {{ form_label(form.nombre) }}
+                {{ form_widget(form.nombre  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'nombre'} }) }}
+            </div>
+       
+            <div class="form-group">
+                {{ form_label(form.cartucho) }}
+                {{ form_widget(form.cartucho  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'referencia del cartucho'} }) }}
+            </div>
+            
+            <div class="form-group">
+                {{ form_label(form.imagen) }}
+                {{ form_widget(form.imagen  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'URL de imagen'} }) }}
+            </div>
+            
+            <div class="form-group">
+                {{ form_label(form.tipoCart) }}
+                {{ form_widget(form.tipoCart  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'tipoCart'} }) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.rendimiento) }}
+                {{ form_widget(form.rendimiento  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'rendimiento'} }) }}
+            </div>
+            </div>
+             <div class="col-md-6">
+            <div class="form-group">
+                {{ form_label(form.modeloImp, "Compatibilidad") }}
+                {{ form_widget(form.modeloImp  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'Compatibilidad'} }) }}
+            </div>
+            
+            <div class="form-group">
+                {{ form_label(form.precio) }}
+                {{ form_widget(form.precio  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'precio'} }) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.color) }}
+                {{ form_widget(form.color  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'color'} }) }}
+            </div>
+            <div class="form-group">
+                {{ form_label(form.tipo) }}
+                {{ form_widget(form.tipo  , {'attr' : {'class' : 'form-control' , 'placeholder' : 'tipo ejemplo: laser'} }) }}
+            </div>
+            
+             <div class="form-group">
+                {{ form_label(form.marca) }}
+                {{ form_widget(form.marca  , {'attr' : {'class' : 'form-control' } }) }}
+            </div>
+             </div>
+            <div class="col-md-6">
+                <p>
+                {{ form_widget(form.save, { 'label' : 'Crear Producto' , 'attr' : { 'class' : 'btn btn-info' } }) }}
+                </p>
+            
+                {{ form_end(form) }}
+                 <a class="btn btn-large btn-success" href="{{ path('producto') }}">
+                Volver a la lista
+                </a>
+            </div>
+            
+            
+       
+    
+        </div>
+      </div>
+    </div>
+         
+{% endblock %}

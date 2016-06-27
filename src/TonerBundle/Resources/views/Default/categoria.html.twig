@@ -1,0 +1,92 @@
+{% extends "TonerBundle:Default:index.html.twig" %}
+{% block slider %}{% endblock %}         
+{% block marcas %}
+    <section style="background-color: whitesmoke;  margin-top: 0px;">
+            <!-- clients -->
+            <div class="container-fluid">
+                <div class="container" style="    padding-top: 30px;" >
+                <div class="row" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px; text-align: center;">
+                        <div class="col-xs-12aligncenter client">
+                            <a href="{{ path('toner_vermarca', { 'id': 2 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo1.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 3 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo2.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 4 , 'page': 1}) }}"><img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo3.png') }}" /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 5 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo4.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 6 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo5.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 7 , 'page': 1}) }}"> <img class="img-marca img-responsive "  alt="logo" src="{{ asset('public/img/clients/logo6.png') }}" /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 8 , 'page': 1}) }}"> <img style="margin: -40px;" class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo7.png') }}"  /></a>
+                        </div>
+                    </div>
+		</div>
+                </div>
+        </section>
+{% endblock%} 
+                        
+{% block body %}
+    
+    
+    <section id="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="heading">{{ marca.nombre }}</h1>
+                                <hr class="colorgraph"/>
+                                <div class="row" >
+                                    {% for entity in entities %}
+                                        <div class="col-sm-4 col-md-3 ">
+                                            <div class="thumbnail" style="height: 410px;">
+                                                <img src="{{ entity.imagen }}" alt="" style="height: 210px; ">
+                                                <div class="caption" style="margin-top: -35px;">
+                                                  <h4>{{ entity.nombre }}</h4>                                                                                  
+                                                  <div class="row" style="margin-bottom: 0px;">
+                                                      <div class="col-xs-12" style=" margin-bottom: 5px; text-align: center">
+                                                        <img class="img-descuento" src="{{ asset('public/img/descuento.JPG') }}" style="width: 100%; margin-bottom: 15px;" />
+
+                                                    </div>
+                                                      <div class="col-xs-12 col-sm-7">
+                                                          <h4>$ {{ entity.precio }} MX</h4>
+                                                      </div>
+                                                       <div class="col-xs-12 col-sm-5">
+                                                          <a href="{{ path('producto_verdetalle', { 'id': entity.id }) }}" class="btn btn-success btn-block" role="button">Ver</a> 
+                                                      </div>
+                                                  </div>
+
+                                                </div>
+                                              </div>
+                                            </div>
+                                    {% endfor %}
+    
+                              </div>
+
+			</div>
+                    
+                    <div class="col-md-12 center-block text-center">
+				<nav>
+                                <ul class="pagination">
+                                  <li>
+                                    <a href="#" aria-label="Previous">
+                                      <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                  </li>
+                                  <li><a href="#">1</a></li>
+                                  <li><a href="#">2</a></li>
+                                  <li><a href="#">3</a></li>
+                                  <li><a href="#">4</a></li>
+                                  <li><a href="#">5</a></li>
+                                  <li>
+                                    <a href="#" aria-label="Next">
+                                      <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                  </li>
+                                </ul>
+                              </nav>	
+		    </div>
+		</div>
+	</div>
+	</section>
+         
+
+            
+{% endblock %}                     
+	
+        
+       

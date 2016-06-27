@@ -1,0 +1,96 @@
+{% extends "TonerBundle:Default:categoria.html.twig" %}                      
+{% block body %}
+    	<section id="content">
+	
+	<div class="container">
+		<div class="row">
+                    <div class="col-lg-12">
+                        <h2>petición de compra <small>deja tus datos y te contactaremos para finalizar la compra</small></h2>
+			<hr class="colorgraph">
+                        <div class="col-lg-4">
+                        <h4>Teléfono: 6719-9776</h4>
+                        <h4>Whatsapp: 556127-7812</h4>
+                        <h4>ventas@toner-economico.com</h4>
+                        </div>
+                        <div class="col-lg-4">
+                        <h4>Dr. Velasco 193 Despacho 101</h4>
+                        <h4>Col. Doctores Del. Cuauhtemoc </h4>
+                        <h4>CDMX   C.P. 06720</h4>
+                        </div>
+                    </div>
+			<div class="col-lg-12">
+	
+		<form role="form" action="{{ path('enviarcompra') }}" method="post">
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+                                            <input type="text" name="nombre" id="first_name" class="form-control input-md" placeholder="Nombre" tabindex="1" required>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="text" name="apellido" id="last_name" class="form-control input-md" placeholder="Apellidos" tabindex="2" required>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="text" name="email" id="email" class="form-control input-md" placeholder="Email" tabindex="2" required>
+					</div>
+				</div>
+                            
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="text" name="direccion" id="direccion" class="form-control input-md" placeholder="Direccion" tabindex="2" required>
+					</div>
+				</div>
+                            
+                                <div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="form-group">
+						<input type="tel" name="telefono" id="tele" class="form-control input-md" placeholder="telefono" tabindex="2" required>
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<textarea class="form-control" name="mensaje" rows="8" placeholder="* Su mensaje" required>Me interesa el producto {{ producto }}</textarea>
+			</div>
+
+			
+			<hr class="colorgraph">
+			<div class="row">
+				<div class="col-xs-12 col-md-4"><input type="submit" value="Enviar mensaje" class="btn btn-theme btn-block btn-md" tabindex="7"></div>
+				<div class="col-xs-12 col-md-8">Por favor llene todos los campos!</div>
+                                <br><br><br><br><br><br>
+			</div>
+		</form>
+
+			</div>
+                    
+                    <div class="col-lg-12 ">
+                        <div class="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8285014895596!2d-99.15579438557035!3d19.41981454612268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff259ca4fbd3%3A0xd551328c027eff04!2sCalle+Dr+Velasco+193%2C+Doctores%2C+06720+Ciudad+de+M%C3%A9xico%2C+D.F.!5e0!3m2!1ses!2smx!4v1466452775721" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+		</div>
+	</div>
+	</section>
+     
+
+            
+{% endblock %}                     
+{% block js %}
+    {{ parent() }}
+ <script>
+
+    {% if envio == 'true' %}
+        $( document ).ready(function() {
+            
+          bootbox.alert("<p><strong>Su peticíon de compra fue enviada correctamente, porfavor espere al contacto de uno de nuestros asesores</strong></p>", function() {
+ });
+});
+    
+    {% endif %}
+</script>
+{% endblock %} 	
+        
+       

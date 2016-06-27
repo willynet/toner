@@ -1,0 +1,73 @@
+{% extends "TonerBundle:Default:index.html.twig" %}
+{% block slider %}{% endblock %}
+{% block marcas %}
+    <section style="background-color: whitesmoke;  margin-top: 0px;">
+            <!-- clients -->
+            <div class="container-fluid">
+                <div class="container" style="    padding-top: 30px;" >
+                <div class="row" style="padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px; text-align: center;">
+                        <div class="col-xs-12aligncenter client">
+                            <a href="{{ path('toner_vermarca', { 'id': 2 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo1.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 3 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo2.png') }}"  /></a>
+                                <a href="{{ path('toner_vermarca', { 'id': 4 , 'page': 1}) }}"><img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo3.png') }}" /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 5 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo4.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 6 , 'page': 1}) }}"> <img class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo5.png') }}"  /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 7 , 'page': 1}) }}"> <img class="img-marca img-responsive "  alt="logo" src="{{ asset('public/img/clients/logo6.png') }}" /></a>
+                               <a href="{{ path('toner_vermarca', { 'id': 8 , 'page': 1}) }}"> <img style="margin: -40px;" class="img-marca img-responsive"  alt="logo" src="{{ asset('public/img/clients/logo7.png') }}"  /></a>
+                        </div>
+                    </div>
+		</div>
+                </div>
+        </section>
+{% endblock%} 
+
+  
+{% block body %}
+     <style>
+        .barra{          
+           height: 70px;
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        z-index: 1200;
+        background-color: #f2f2f2;
+        }  
+    </style>
+    <div class="barra">
+        <nav class="navbar " style="height: 40px;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <p class="navbar-brand" style="margin: 0px; margin-top: 15px;" >Administrador:  {{ app.user.nombre }}</p>
+    </div>
+    <ul class="nav navbar-nav">
+       
+      <li class="active"><a href="{{ path('producto' )}}">&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Marcas<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ path('marca')}}">Tabla de marcas</a></li>
+          <li><a href="{{ path('marca_new') }}">Agregar marca</a></li>
+        </ul>
+      </li>
+     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Productos <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="{{ path('producto' )}}">Tabla de productos</a></li>
+          <li><a href="{{ path('producto_new') }}">Agregar producto</a></li>
+          
+        </ul>
+      </li>
+      
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+      <li><a href="{{ path('user_logout') }}"><span class="glyphicon glyphicon-user"></span>Cerrar sesion</a></li>
+      
+    </ul>
+  </div>
+</nav>
+        <hr class="colorgraph">
+    </div>
+        
+{% endblock %}                     
+	
+        
+       

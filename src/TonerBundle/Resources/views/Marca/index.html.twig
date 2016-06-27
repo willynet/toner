@@ -1,0 +1,54 @@
+{% extends "TonerBundle:Default:admin.html.twig" %}                      
+{% block marcas %} {% endblock %}
+{% block body -%}   
+   {{ parent() }}  
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="page-header">
+                <h2>Marcas</h2>
+                <hr class="colorgraph">
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>                       
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+            
+            <tbody>
+            {% for entity in entities %}
+                <tr>
+                    
+                    <td>{{ entity.nombre }}</td>
+                    <td> <a target="_blank" href="{{ entity.imagen }}">{{ entity.imagen }}</a> </td>
+                    <td>
+                            <a class="btn btn-info" href="{{ path('marca_show', { 'id': entity.id }) }}">Ver</a>
+                       
+                            <a class="btn btn-success" href="{{ path('marca_edit', { 'id': entity.id }) }}">Editar</a>
+                       
+                    
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+            </table>
+        </div>
+        
+         <a class="btn btn-primary btn-large" href="{{ path('marca_new') }}">
+                Agregar Nueva Marca
+            </a> 
+        
+    </div>
+   
+       
+        
+   
+
+           
+        
+    {% endblock %}

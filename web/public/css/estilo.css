@@ -1,0 +1,50 @@
+#main-slider{
+    
+    background-image: url("../img/slides/flexslider/fondo-banners.jpg");
+}
+
+.img-marca{
+    display: inline-block;
+    margin: 10px;
+}
+
+.pagination > li > a:hover, .pagination > li > a:focus, .pagination > .active > a, .pagination > .active > span {
+    background-color: #2196f3;
+    color: white;
+}
+
+.thumbnail {
+    height: 350px;
+}
+
+.flexslider .slides img {
+    /* width: 100%; */
+    display: block;
+    width: 90%;
+    display: block;
+    max-width: 1080px;
+    max-height: 500px;
+    margin-left: 10%;
+}
+
+.flex-viewport {
+    max-height: 500px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #3598dc !important;
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    height: auto !important;
+    }
+    
+    .img-descuento{
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 1200px) {
+  
+}

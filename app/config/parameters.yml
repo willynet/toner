@@ -1,0 +1,14 @@
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: toner
+    database_user: toner
+    database_password: tino1995
+    mailer_transport: gmail
+    mailer_host: ~
+    mailer_user: tonereconomicochat@gmail.com
+    mailer_password: tonerchat
+    locale: en
+    secret: f23c0c07ea2afd21783665cd2c46657f8248fec2
+    database_path: null
